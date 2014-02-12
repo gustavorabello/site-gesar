@@ -4,25 +4,89 @@ default_block: main
 title: BASIC - A hyde website
 description: Home page for the BASIC hyde template
 ---
+
+<head>
+  <link rel="stylesheet" href="{{ media_url('css/layoutTwoColumns.css') }}">
+  <link rel="stylesheet" href="{{ media_url('css/inicio.css') }}">
+ </head>
+
  <body>
-   <li> <a href="{{ STATIC_URL }}html/vimCommands.html"> vim commands
-   </a> </li>
-   <li> <a href="{{ STATIC_URL }}html/vimrc.html"> vimrc file </a>
-   </li>
-   <li> <a href="{{ STATIC_URL }}html/macTips.html"> mac tips </a>
-   </li>
-   <li> <a href="{{ STATIC_URL }}html/macProgs.html"> mac programs </a> </li>
-   <li> <a href="{{ STATIC_URL }}html/git.html"> git </a> </li>
-   <li> <a href="{{ STATIC_URL }}html/ubuntuProgs.html"> ubuntu programs </a> </li>
-   <li> <a href="{{ STATIC_URL }}html/shellscript.html"> shell script - bash </a> </li>
-   <li> <a href="{{ STATIC_URL }}html/ripFormats.html"> rip formats </a> </li>
-   <li> <a href="{{ STATIC_URL
-	}}html/django-python-config.html"> django-python-config </a> </li>
-   <li> <a href="{{ STATIC_URL }}html/programs.html"> libraries linux/osx (how-to) </a> </li>
-   <li> <a
-	href="http://www.julienvitard.eu/en/eqtexsvg_en.html#Downloads"> latex formula -> inkscake </a> </li>
-   <li> <a href="{{ STATIC_URL }}misc/aquaterm.rb"> aquaterm.rb (homebrew acqua) </a> </li>
-   <li> <a href="{{ STATIC_URL }}misc/gnuplot.rb"> gnuplot.rb (homebrew gnuplot w/ support acqua) </a>
-   </li>
+  <div id="twoColumns">
+   <div class="left">
+	<p> No ano de 2005, um projeto de PD (Pesquisa e Desenvolvimento)
+	conduzido por FURNAS CENTRAIS ELETRICAS S.A. teve por objetivo o
+	desenvolvimento de um software de qualidade comercial - FERSim -
+	para a simulacao da incorporacao de biomassa no enchimento de
+	compartimentos de reservatorios. Este projeto foi o elemento
+	propulsor para a criacao do GESAR (Grupo de Estudos e Simulacoes
+	Ambientais em Reservatorios). Instalado nas dependencias da
+	Faculdade de Engenharia da UERJ (Universidade do Estado do Rio de
+	Janeiro), a estrutura laboratorial montada permitiu que os
+	pesquisadores do projeto atuassem no levantamento de dados da
+	cinetica de decomposicao da biomassa, permitindo, dessa maneira, a
+	parametrizacao do simulador FERSim. Por sua vez, o GESAR tornou-se
+	capaz de realizar grande parte dos estudos limnologicos que se
+	fizeram necessarios ao projeto. Investimentos suntuosos foram feitos
+	durante a execucao do projeto, ultrapassando a margem de quatro
+	milhoes de reais. Tendo sido concluido em meados de 2008, contou com
+	a participacao de varios pesquisadores doutores de universidades
+	brasileiras e profissionais nas areas de Engenharia, Fisica,
+	Quimica, Matematica Aplicada, alem de analistas de sistemas,
+	programadores, engenheiros florestais e uma comunidade academica
+	constituida por alunos de graduacao, mestrado e doutorado. Os frutos
+	colhidos apos o projeto no ambito de producao cientifica ratificam a
+	qualidade do trabalho: duas teses de doutorado concluidas e uma em
+	andamento, cinco dissertacoes de mestrado concluidas e cinco em
+	andamento; vinte trabalhos apresentados em congressos no pais, dez
+	em congressos no exterior; sete artigos completos em periodicos
+	internacionais e dois em periodicos nacionais. </p>
+   </div>
+   <div class="right">
+	<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;ctz=America%2FSao_Paulo" style=" border-width:0 " width="180" height="220" frameborder="0" scrolling="no"></iframe>
+   </div>
+
+   <p>&nbsp;</p>
+
+   <div class="right">
+	<li> <a href="html/vimCommands.html"> vim commands </a> </li>
+	<li> <a href="html/vimrc.html"> vimrc file </a> </li>
+	<li> <a href="html/macTips.html"> mac tips </a> </li>
+	<li> <a href="html/macProgs.html"> mac programs </a> </li>
+	<li> <a href="html/git.html"> git </a> </li>
+	<li> <a href="html/ubuntuProgs.html"> ubuntu programs </a> </li>
+	<li> <a href="html/shellscript.html"> shell script - bash </a> </li>
+	<li> <a href="html/ripFormats.html"> rip formats </a> </li>
+   </div>
+  </div>
+
+  <div id="singleColumn">
+   <p> Agencias de fomento </p>
+   <p>&nbsp;</p>
+   <a href="http://www.cnpq.br"> <img src={{ media_url('images/logos/cnpq.png') }} border="1" height="50px"> </a>
+   <a href="http://www.faperj.br"> <img src={{ media_url('images/logos/faperj.png') }} border="1" height="50px"> </a>
+   <a href="http://www.finep.gov.br"> <img src={{ media_url('images/logos/finep.png') }} border="1" height="50px"> </a>
+   <a href="http://www.capes.gov.br"> <img src={{ media_url('images/logos/capes.png') }} border="1" height="50px"> </a>
+  </div>
+
+  <div id="singleColumn">
+   <p> Unidades academicas </p>
+   <p>&nbsp;</p>
+   <a href="http://www.uerj.br"> <img src={{ media_url('images/logos/uerj.png') }} border="1" height="50px"> </a>
+   <a href="http://www.eng.uerj.br"> <img src={{ media_url('images/logos/fen.png') }} border="1" height="50px"> </a>
+   <a href="http://www.ppg-em.eng.uerj.br"> <img src={{ media_url('images/logos/ppgem.png') }} border="1" height="50px"> </a>
+  </div>
+
+  <div id="singleColumn">
+   <p> Outros links </p>
+   <p>&nbsp;</p>
+   <a href="http://www.periodicos.capes.gov.br"> <img src={{ media_url('images/logos/periodicos.png') }} border="1" height="50px"> </a>
+   <a href="http://www.scielo.br"> <img src={{ media_url('images/logos/scielo.png') }} border="1" height="50px"> </a>
+   <a href="http://www.scopus.com"> <img src={{ media_url('images/logos/scopus.png') }} border="1" height="50px"> </a>
+   <a href="http://www.lattes.cnpq.br"> <img src={{ media_url('images/logos/lattes.png') }} border="1" height="50px"> </a>
+  </div>
+  <div id="singleColumn">
+   <a href="http://www.webofknowledge.com"> <img src={{ media_url('images/logos/webofscience.png') }} border="1" height="50px"> </a>
+  </div>
+
  </body>
 

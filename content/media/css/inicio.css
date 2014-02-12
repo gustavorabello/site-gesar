@@ -1,0 +1,67 @@
+
+/* ABOUT - EXTENSION OF 2 COLUMN LAYOUT */
+@import url("layoutSingleColumn.css"); 
+@import url("layoutTwoColumn.css"); 
+
+#twoColumns 
+{ 
+ height:600px;
+}
+
+#twoColumns img
+{ 
+ display:block;
+ margin-left:auto;
+ margin-right:auto;
+ border-style:solid;
+ border-width:5px;
+ border-color:red; 
+}
+
+#twoColumns ul
+{ 
+ margin-left:-20px;
+ text-align:left; 
+}
+
+#twoColumns p
+{ 
+ font-size:14px;
+ text-align:justify;
+ padding-top:-10px;
+ padding-bottom:0px;
+ color:black;
+}
+
+#twoColumns .left
+{ 
+ width:75%;
+ height:auto;
+ padding-bottom:50px;
+}
+
+#twoColumns .right
+{ 
+ width:20%;
+ padding-right:0px;
+ height:auto;
+ padding-bottom:50px;
+}
+
+#singleColumn 
+{ 
+ width:750px;
+ text-align: center;
+}
+
+#singleColumn p
+{ 
+ font-size: 12pt;
+ text-align: center;
+}
+
+#singleColumn img
+{ 
+ padding-left:20px;
+}
+

@@ -1,0 +1,51 @@
+/* HEADER CONFIG */
+@import url("header.css");
+
+/* BAR CONFIG */
+@import url("bar.css");
+
+/* FOOTER CONFIG */
+@import url("footer.css"); 
+
+
+/* BASIC CONFIG */
+html, body 
+{ 
+ text-align:center; 
+}
+
+p 
+{ 
+ text-align: left; 
+}
+
+a
+{ 
+ text-decoration:none; 
+ color:#2A2A2A; 
+ border-bottom:1px; 
+}
+
+a:hover
+{ 
+ color:red; 
+ border-bottom:1px; 
+}
+
+body 
+{ 
+ margin:0; 
+ padding:0; 
+ background:#697281; 
+ text-align:left;
+ font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+ font-size:13px; 
+ color:#F1F5F8; 
+ background-color:#EFEFEF;
+}
+
+*
+{ 
+ margin:0 auto 0 auto;
+ text-align:left; 
+}
