@@ -6,12 +6,13 @@
 { 
  width:680px;
  padding-top:10px;
- padding-bottom:20px;
+ padding-bottom:40px;
  padding-left:30px; 
  padding-right:30px;
  font-size:13px; 
  color:blue; 
  letter-spacing:-1px;
+ height=auto;
 }
 
 #singleColumn a

@@ -1,0 +1,137 @@
+
+/* PESSOAS.CSS - EXTENSION OF single AND two column LAYOUT */
+@import url("layoutSingleColumn.css"); 
+@import url("layoutTwoColumns.css"); 
+
+#twoColumns 
+{ 
+ height:320px;
+}
+
+#twoColumns img
+{ 
+ display:block;
+ margin-left:auto;
+ margin-right:auto;
+ border-style:solid;
+ border-width:3px;
+ border-color:gray; 
+}
+
+#twoColumns ul
+{ 
+ margin-left:-20px;
+ text-align:left; 
+}
+
+#twoColumns p
+{ 
+ font-size:14px;
+ text-align:justify;
+ padding-top:-10px;
+ padding-bottom:0px;
+ color:black;
+}
+
+#twoColumns b
+{ 
+ font-size:14px;
+ text-align:justify;
+ color:gray;
+}
+
+#twoColumns h1
+{ 
+ font-size:22px;
+ text-align:left;
+ color:black;
+}
+
+#twoColumns h2
+{ 
+ font-size:16px;
+ text-align:left;
+ color:black;
+}
+
+#twoColumns .left
+{ 
+ width:40%;
+ height:auto;
+}
+
+#twoColumns .right
+{ 
+ width:58%;
+ padding-right:0px;
+ height:auto;
+}
+
+#singleColumn 
+{ 
+ width:750px;
+ text-align: left;
+}
+
+#singleColumn p
+{ 
+ font-size:14px;
+ text-align:justify;
+ color:black;
+}
+
+#singleColumn h1
+{ 
+ font-size:18px;
+ text-align:justify;
+ color:black;
+}
+
+#singleColumn li
+{ 
+ font-size:14px;
+ padding-left:20px;
+ text-align:justify;
+ color:black;
+}
+
+#block
+{ 
+ width:950px;
+}
+
+#block img
+{ 
+ display:block;
+ margin-left:auto;
+ margin-right:auto;
+}
+
+#block h1
+{ 
+ font-size:18px;
+ color:black;
+}
+
+#block p
+{ 
+ font-size:14px;
+ text-align:justify;
+ margin-top:5px;
+ color:black;
+}
+
+#block .left
+{ 
+ width:10%;
+ float:left;
+ height:auto 
+}
+
+#block .right
+{ 
+ width:90%;
+ float:right;
+ height:auto 
+}
+
