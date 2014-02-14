@@ -18,7 +18,7 @@ context:
                 description: Inicio
                 css_class: index
                 type: page
-                url: inicio.html
+                url: index.html
             -
                 name: Pessoas
                 description: Pessoas
