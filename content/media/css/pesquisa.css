@@ -1,0 +1,83 @@
+
+/* PESQUISA.CSS - EXTENSION OF single column LAYOUT */
+@import url("layoutSingleColumn.css"); 
+
+#singleColumn 
+{ 
+ height:200px;
+ padding-bottom:20px;
+ width:750px;
+ text-align: left;
+}
+
+#singleColumn p
+{ 
+ font-size:14px;
+ text-align:justify;
+ color:black;
+}
+
+#singleColumn h1
+{ 
+ font-size:18px;
+ text-align:justify;
+ color:black;
+}
+
+#singleColumn li
+{ 
+ font-size:14px;
+ padding-left:20px;
+ text-align:justify;
+ color:black;
+}
+
+#block
+{ 
+ width:750px;
+ height:200px;
+}
+
+#block img
+{ 
+ display:block;
+ margin-left:auto;
+ margin-right:auto;
+}
+
+#block h1
+{ 
+ font-size:18px;
+ color:black;
+}
+
+#block p
+{ 
+ font-size:14px;
+ text-align:justify;
+ margin-top:5px;
+ color:black;
+}
+
+#block li
+{ 
+ font-size:14px;
+ padding-left:20px;
+ text-align:justify;
+ color:black;
+}
+
+#block .left
+{ 
+ float:left;
+ width:40%;
+ /*background:red;*/
+}
+
+#block .right
+{ 
+ float:right;
+ width:58%;
+ /*background:green;*/
+}
+
