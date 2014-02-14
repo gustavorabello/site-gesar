@@ -1,0 +1,37 @@
+---
+extends: base.j2
+default_block: main
+title: BASIC - A hyde website
+description: Home page for the BASIC hyde template
+---
+
+<head>
+  <link rel="stylesheet" href="{{ media_url('css/layoutTwoColumns.css') }}">
+  <link rel="stylesheet" href="{{ media_url('css/pessoas.css') }}">
+ </head>
+
+ <body>
+  <div id="twoColumns">
+   <div class="left">
+   <img src={{ media_url('images/people/sonia.jpg') }} border="1"
+   height="300px"> 
+   </div>
+   <div class="right">
+	<h1> Sonia Nina </h1>
+	<h2> Suporte Administrativo </h2>
+    <p>&nbsp;</p>
+	<p> <b> Endere&ccedilo: </b> 
+	    Rua Fonseca Telles, 121 <br>
+	    pr&eacutedio anexo - S&atildeo Crist&oacutev&atildeo <br> 
+	    20940-903 Rio de Janeiro RJ <br>
+	    Brasil </p>
+    <p>&nbsp;</p>
+	<p> <b> Tel: </b> +55 (21) 2332-4733 </p>
+	<p> <b> Fax: </b> +55 (21) 2332-4733 </p>
+	<p> <b> E-mail: </b> <a href="mailto:zinonina@gmail.com" target="_top">
+	 zinonina@gmail.com </a>
+   </div>
+  </div>
+
+ </body>
+
