@@ -1,3 +1,22 @@
+p 
+{ 
+ text-align: center; 
+ color:black;
+}
+
+a
+{ 
+ text-decoration:none; 
+ color:#2A2A2A; 
+ border-bottom:1px; 
+}
+
+a:hover
+{ 
+ color:red; 
+ border-bottom:1px; 
+}
+
 * {
     vertical-align: baseline;
     font-weight: inherit;
@@ -43,19 +62,56 @@ table {
 	color: black;
 }
 
+.column1
+{ 
+ float:left;
+ clear:left;
+ width:100px;
+}
+
+.column2
+{ 
+ float:left;
+ width:500px;
+ padding-left:20px;
+ padding-right:5px;
+}
+
+.column3
+{ 
+ font-size:10px;
+ text-align:left;
+ padding-top:5px;
+ float:right;
+ clear:right;
+ width:170px;
+}
+
+img
+{
+ padding-bottom:7px;
+}
+
+b
+{
+ color:black;
+ font-weight:bold;
+}
 
 * html .clearfix {
     height: 1%;
 }
 
-a {
-    color: #37e;
-    text-decoration: underline;
-    text-shadow: 0px 2px 0px #fff;
+a 
+{
+ color: #37e;
+ text-decoration: underline;
+ text-shadow: 0px 2px 0px #fff;
 }
 
-a:hover{
-    color: #222;
+a:hover
+{
+ color: #222;
 }
 
 body{
@@ -159,7 +215,7 @@ footer{
 }
 
 .banner h1{
-    font-weight: 100;
+    font-weight: 400;
     font-size: 32px;
     line-height: 48px;
 }
@@ -471,3 +527,4 @@ a.backlink:hover, a.prev:hover, a.next:hover{
   line-height: 24px;
   margin-bottom: 8px;
 }
+

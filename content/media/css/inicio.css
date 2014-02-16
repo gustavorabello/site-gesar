@@ -1,64 +1,138 @@
 
-/* ABOUT - EXTENSION OF 2 COLUMN LAYOUT */
-@import url("layoutSingleColumn.css"); 
-@import url("layoutTwoColumns.css"); 
+/* PESQUISA.CSS - EXTENSION OF SITE LAYOUT */
+@import url("site.css"); 
 
-#twoColumns 
+#block 
 { 
- height:500px;
+ height:480px;
+ padding-top:20px;
+ text-align:justify;
 }
 
-#twoColumns img
+#block img
 { 
  display:block;
  margin-left:auto;
  margin-right:10px;
 }
 
-#twoColumns ul
+#block p
 { 
- margin-left:-20px;
- text-align:left; 
-}
-
-#twoColumns p
-{ 
- font-size:14px;
+ font-size:16px;
  text-align:justify;
  padding-top:-10px;
  padding-bottom:0px;
+}
+
+#block a
+{ 
+ text-align:justify;
+ text-decoration:none;
+ color: black;
+}
+
+#block li
+{ 
+ font-size:12px;
+ text-align:justify;
+ line-height:100%;
+}
+
+#block .left
+{ 
+ float:left;
+ width:70%;
+ height:auto;
+}
+
+#block .right
+{ 
+ float:right;
+ width:25%;
+ height:auto;
+}
+
+#block .col1
+{ 
+ float:left;
+ width:25%;
+ height:auto;
+}
+
+#block .col2
+{ 
+ padding-left:20px;
+ float:left;
+ width:45%;
+ height:auto;
+}
+
+#block .col3
+{ 
+ float:right;
+ width:25%;
+ height:auto;
+}
+
+#singleColumn
+{ 
+ width:720px;
+ padding-bottom:20px;
+ padding-top:20px; 
+ padding-right:30px;
+ text-align:center; 
+ font-size:13px; 
+ letter-spacing:-1px;
+}
+
+#singleColumn a
+{ 
+ font-family:Arial, Helvetica, sans-serif; 
+}
+
+#singleColumn a:hover
+{ 
+ color:red;
+ border-bottom:1px;
+}
+
+#singleColumn p 
+{ 
+ text-align:center; 
+}
+
+#singleColumn li
+{
+ font-size:14px;
+ font-family:Arial, Helvetica, sans-serif; 
+ text-decoration:none;
+ color:black;
+ letter-spacing:-1px;
+ padding-left:15px;
+ padding-bottom:8px;
+ text-align:justify;
+}
+
+#singleColumn h1
+{ 
+ font-size:18px;
+ font-weight:bold;
+ text-align:left;
  color:black;
 }
 
-#twoColumns .left
+#singleColumn h2
 { 
- width:75%;
- height:auto;
- padding-bottom:50px;
-}
-
-#twoColumns .right
-{ 
- width:20%;
- padding-right:0px;
- height:auto;
- padding-bottom:50px;
-}
-
-#singleColumn 
-{ 
- width:750px;
- text-align: center;
-}
-
-#singleColumn p
-{ 
- font-size: 12pt;
- text-align: center;
+ font-size:18px;
+ text-align:justify;
+ color:black;
 }
 
 #singleColumn img
 { 
- padding-left:20px;
+ height:50px;
+ text-align:center;
+ color:black;
 }
+
 

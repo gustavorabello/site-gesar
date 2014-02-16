@@ -9,17 +9,42 @@ description: Home page for the BASIC hyde template
  <link rel="stylesheet" href="{{ media_url('css/pesquisa.css') }}">
 </head>
 
+<script> 
+ function bigImg(x) 
+ { 
+  x.style.height="200px"; 
+ } 
+
+ function normalImg(x) 
+ { 
+  x.style.height="100px"; 
+ } 
+</script> 
+
+
 <body>
- <div id="singleColumns">
+ <div id="singleColumn">
   <p>&nbsp;</p>
   <p>&nbsp;</p>
-  <h1> ESCOAMENTOS DE FLUIDOS ROTATORIAS </h1>
+  <li> <h1> ESCOAMENTOS DE FLUIDOS ROTATORIAS </h1> </li>
   <p>&nbsp;</p>
   <div id="block">
+
    <div class="left">
-	<img src={{ media_url('images/people/peixoto.gif') }} border="0"
-	height="150px"> 
+	<div class="imgLeft">
+	 <img src={{ media_url('images/research/disk.png') }} > 
+	</div>
+	<div class="imgRight">
+	 <img src={{ media_url('images/research/disk.png') }} > 
+	</div>
+	<div class="imgLeft">
+	 <img src={{ media_url('images/research/disk.png') }} > 
+	</div>
+	<div class="imgRight">
+	 <img src={{ media_url('images/research/disk.png') }} > 
+	</div>
    </div>
+
    <div class="right">
 	<p> Este trabalho aborda a estabilidade linear da solucao classica
 	do campo hidrodinamico que se forma na vizinhanca de um disco
@@ -29,61 +54,53 @@ description: Home page for the BASIC hyde template
 	eletrodos de disco rotatorio de ferro, os quais se dissolvem na
 	solucao 1 M de H2SO4 do eletrolito.</p>
 	<p>&nbsp;</p>
+	<li> <a href={{('pesquisa/disco/eletroquimica.html')}}> mais
+	 informacao </a> </li>
 	<li> <a href={{('pesquisa/disco/publicacoes.html')}}> lista de
 	 publicacoes </a> </li>
    </div>
   </div>
- </div>
- <p>&nbsp;</p>
- <p>&nbsp;</p>
 
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <li> <h1> ESCOAMENTOS MULTIFASICOS </h1> </li>
+  <p>&nbsp;</p>
+   <div id="block">
 
- <div id="singleColumns">
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <h1> EQUACOES DE ONDAS </h1>
-  <p>&nbsp;</p>
-  <div id="block">
-   <div class="left">
-	<img src={{ media_url('images/people/silveira.jpg') }} border="0" 
-	height="150px"> 
+	<div class="left">
+	 <div class="imgLeft">
+	  <img src={{ media_url('images/research/3Dmesh.png') }} >
+	 </div>
+	 <div class="imgRight">
+	  <img src={{ media_url('images/research/singleVortex.png') }} >
+	 </div>
+	 <div class="imgLeft">
+	  <img src={{ media_url('images/research/risingBubble.png') }} >
+	 </div>
+	 <div class="imgRight">
+	  <img src={{ media_url('images/research/3d-vortex.png') }} >
+	 </div>
+	</div>
+
+	<div class="right">
+	 <p> Este trabalho aborda a estabilidade linear da solucao classica
+	 do campo hidrodinamico que se forma na vizinhanca de um disco
+	 rotatorio de grande diametro, modificado pelo acoplamento, atraves
+	 da viscosidade, com o de concentracao de uma especie quimica. A
+	 configuracao refere-se a celulas eletroquimicas que utilizam
+	 eletrodos de disco rotatorio de ferro, os quais se dissolvem na
+	 solucao 1 M de H2SO4 do eletrolito.</p>
+	 <p>&nbsp;</p>
+	 <li> <a href={{('pesquisa/disco/eletroquimica.html')}}> mais
+	  informacao </a> </li>
+	 <li> <a href={{('pesquisa/disco/publicacoes.html')}}> lista de
+	  publicacoes </a> </li>
+	</div>
+
    </div>
-   <div class="right">
-	<p> Este trabalho aborda a estabilidade linear da solucao classica
-	do campo hidrodinamico que se forma na vizinhanca de um disco
-	rotatorio de grande diametro, modificado pelo acoplamento, atraves
-	da viscosidade, com o de concentracao de uma especie quimica. A
-	configuracao refere-se a celulas eletroquimicas que utilizam
-	eletrodos de disco rotatorio de ferro, os quais se dissolvem na
-	solucao 1 M de H2SO4 do eletrolito.</p>
-   </div>
+
   </div>
- </div>
- <p>&nbsp;</p>
- <p>&nbsp;</p>
-
- <div id="singleColumns">
   <p>&nbsp;</p>
   <p>&nbsp;</p>
-  <h1> ESCOAMENTOS MULTIFASICOS </h1>
-  <p>&nbsp;</p>
-  <div id="block">
-   <div class="left">
-	<img src={{ media_url('images/people/rachel.gif') }} border="0" 
-	height="150px"> 
-   </div>
-   <div class="right">
-	<p> Este trabalho aborda a estabilidade linear da solucao classica
-	do campo hidrodinamico que se forma na vizinhanca de um disco
-	rotatorio de grande diametro, modificado pelo acoplamento, atraves
-	da viscosidade, com o de concentracao de uma especie quimica. A
-	configuracao refere-se a celulas eletroquimicas que utilizam
-	eletrodos de disco rotatorio de ferro, os quais se dissolvem na
-	solucao 1 M de H2SO4 do eletrolito.</p>
-   </div>
-  </div>
- </div>
- <p>&nbsp;</p>
- <p>&nbsp;</p>
-</body>
+ </body>
 
