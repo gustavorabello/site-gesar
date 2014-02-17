@@ -20,7 +20,7 @@ context:
                 description: Inicio
                 css_class: index
                 type: page
-                url: index.html
+                url: index2.html
             -
                 name: Pessoas
                 description: Pessoas
