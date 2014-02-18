@@ -26,7 +26,12 @@
 
 #singleColumn p 
 { 
- text-align:center; 
+ text-align:left; 
+}
+
+#singleColumn ul
+{
+ margin-left:30px;
 }
 
 #singleColumn li
@@ -36,17 +41,21 @@
  text-decoration:none;
  color:black;
  letter-spacing:-1px;
- padding-left:15px;
+ padding-left:0px;
  padding-bottom:8px;
  text-align:justify;
 }
 
 #singleColumn h1
 { 
- font-size:18px;
+ font-size:20px;
  font-weight:bold;
  text-align:left;
  color:black;
+ width:760px;
+ line-height: 36px;
+ margin-bottom:10px;
+ border-bottom: 1px solid #ccc;
 }
 
 #singleColumn h2
@@ -127,7 +136,7 @@
 { 
  margin-left:40px;
  width:700px;
- height:300px;
+ height:200px;
 }
 
 #block img

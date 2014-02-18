@@ -1,30 +1,17 @@
 ---
-title: Escoamentos de fluidos rotatorios
-description: Escoamentos de fluidos rotatorios
-created: !!timestamp '2011-02-01 10:00:00'
+title: Escoamentos multifasicos
+description: Escoamentos multifasicos
+created: !!timestamp '2013-02-16 10:00:00'
 tags:
     - disco
     - estabilidade
 ---
 
-{% mark image -%}
 
-<div class="left">
- <div class="imgLeft">
-  <img src={{ media_url('images/research/2disks.png') }} >
- </div>
- <div class="imgRight"> 
-  <img src={{ media_url('images/research/disk.png') }} >
- </div>
- <div class="imgLeft">
-  <img src={{ media_url('images/research/2disks.png') }} >
- </div>
- <div class="imgRight">
-  <img src={{ media_url('images/research/disk.png') }} >
- </div> 
-</div>
-
-{%- endmark %}
+{% mark img1 -%} ![s1]([[!!images/research/3Dmesh.png]]) {%- endmark %}
+{% mark img2 -%} ![s2]([[!!images/research/singleVortex.png]]) {%- endmark %}
+{% mark img3 -%} ![s3]([[!!images/research/risingBubble.png]]) {%- endmark %}
+{% mark img4 -%} ![s4]([[!!images/research/3d-vortex.png]]) {%- endmark %}
 
 {% mark excerpt -%}
 
@@ -38,12 +25,13 @@ diametro de 5 mm revestido com camada de epoxi nas paredes laterais,
 permitindo que a corrente flua apenas pela base do cilindro, onde o
 campo hidrodinamico e modelado pela solucao classica de von Karman.
 
-[mais informacao][1]
+{%- endmark %}
 
-[publicacoes][2]
+{% mark link-%}
+- [mais informacao][1]
+[1]: {{media_url('html/disco/eletroquimica.html')}}
 
-[1]: {{('pesquisa/disco/eletroquimica.html')}}
-[2]: {{('pesquisa/disco/publicacoes.html')}}
-
+- [publicacoes][2]
+[2]: {{media_url('html/disco/publicacoes.html')}}
 {%- endmark %}
  
