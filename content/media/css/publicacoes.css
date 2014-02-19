@@ -1,0 +1,248 @@
+
+/* PESQUISA.CSS - EXTENSION OF SITE LAYOUT */
+@import url("site.css"); 
+
+#singleColumn
+{ 
+ width:720px;
+ padding-bottom:20px;
+ padding-top:20px; 
+ padding-right:30px;
+ text-align:center; 
+ font-size:13px; 
+ letter-spacing:-1px;
+}
+
+#singleColumn a
+{ 
+ font-family:Arial, Helvetica, sans-serif; 
+}
+
+#singleColumn a:hover
+{ 
+ color:red;
+ border-bottom:1px;
+}
+
+#singleColumn p 
+{ 
+ text-align:left; 
+}
+
+#singleColumn ul
+{
+ margin-left:30px;
+}
+
+#singleColumn li
+{
+ font-size:14px;
+ font-family:Arial, Helvetica, sans-serif; 
+ text-decoration:none;
+ color:black;
+ letter-spacing:-1px;
+ padding-left:0px;
+ padding-bottom:8px;
+ text-align:justify;
+}
+
+#singleColumn h1
+{ 
+ font-size:20px;
+ font-weight:bold;
+ text-align:left;
+ color:black;
+ width:760px;
+ line-height: 36px;
+ margin-bottom:10px;
+ border-bottom: 1px solid #ccc;
+}
+
+#singleColumn h2
+{ 
+ font-size:18px;
+ text-align:justify;
+ color:black;
+}
+
+#singleColumn img
+{ 
+ height:50px;
+ text-align:center;
+ color:black;
+}
+
+
+
+#item
+{ 
+ display:block;
+ height:75px;
+ width:650px;
+ margin-left:40px;
+ text-align: justify;
+}
+
+#item p
+{
+ text-align:justify;
+ color:black;
+}
+
+#item b
+{
+ color:black;
+ font-weight:bold;
+}
+
+#item li
+{ 
+ font-size:14px;
+ padding-left:20px;
+ text-align:justify;
+ color:black;
+}
+
+#item h1
+{ 
+ font-size:18px;
+ text-align:justify;
+ padding-top:40px;
+ color:black;
+}
+
+#item .right
+{ 
+ float:right;
+ width:96%;
+}
+
+#item .left
+{ 
+ border:0;
+ float:left;
+ width:3%;
+}
+
+#item img
+{ 
+ display:block;
+ height:25px;
+ margin-left:auto;
+ margin-right:auto;
+}
+
+#block
+{ 
+ margin-left:40px;
+ width:700px;
+ height:200px;
+}
+
+#block img
+{ 
+ display:block;
+ margin-left:auto;
+ margin-right:auto;
+ height:100px;
+}
+
+#block h1
+{ 
+ font-size:18px;
+ color:black;
+}
+
+#block p
+{ 
+ font-size:14px;
+ text-align:justify;
+ color:black;
+}
+
+#block li
+{ 
+ font-size:14px;
+ text-align:justify;
+ text-decoration:none;
+ color:black;
+}
+
+#block a
+{ 
+ font-size:14px;
+ text-align:justify;
+ text-decoration:none;
+ color:black;
+}
+
+#block .left
+{ 
+ float:left;
+ width:40%;
+ /*background:red;*/
+}
+
+#block .right
+{ 
+ float:right;
+ width:58%;
+ /*background:green;*/
+}
+
+#block .imgLeft
+{ 
+ display:block;
+ float:left;
+ padding-left:15px;
+ width:40%;
+ /*background:red;*/
+}
+
+#block .imgRight
+{ 
+ display:block;
+ float:right;
+ padding-right:15px;
+ width:40%;
+ /*background:green;*/
+}
+
+#simple
+{ 
+ font-size:30px;
+ margin-left:120px;
+ margin-right:120px;
+ margin-bottom:20px;
+ margin-top:20px;
+ text-align:justify;
+ text-decoration:none;
+ letter-spacing:0px;
+ color:black;
+ height:auto;
+}
+
+#simple h1
+{ 
+ font-size:22px;
+ font-weight:bold;
+ width:450px;
+ margin-left:60px;
+ text-align:center;
+ color:black;
+}
+
+#simple p
+{ 
+ font-size:14px;
+ text-align:justify;
+ color:black;
+}
+
+#simple img
+{ 
+ display:block;
+ margin-left:auto;
+ margin-right:auto;
+}
+
