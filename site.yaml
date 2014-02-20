@@ -1,8 +1,8 @@
 
 
-mode: development
+#mode: development
 
-#mode: production
+mode: production
 media_url: /media # URL where the media files are served from.
 image_url: /media/images # URL for images media files.
 
