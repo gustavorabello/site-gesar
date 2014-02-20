@@ -2,77 +2,31 @@
 /* PESQUISA.CSS - EXTENSION OF SITE LAYOUT */
 @import url("site.css"); 
 
-#singleColumn
+#page
 { 
  width:720px;
- padding-bottom:20px;
- padding-top:20px; 
- padding-right:30px;
+ margin-top:60px;
+ margin-bottom:60px;
  text-align:center; 
  font-size:13px; 
  letter-spacing:-1px;
 }
 
-#singleColumn a
+#page a
 { 
  font-family:Arial, Helvetica, sans-serif; 
 }
 
-#singleColumn a:hover
+#page a:hover
 { 
  color:red;
  border-bottom:1px;
 }
 
-#singleColumn p 
+#page p 
 { 
  text-align:left; 
 }
-
-#singleColumn ul
-{
- margin-left:30px;
-}
-
-#singleColumn li
-{
- font-size:14px;
- font-family:Arial, Helvetica, sans-serif; 
- text-decoration:none;
- color:black;
- letter-spacing:-1px;
- padding-left:0px;
- padding-bottom:8px;
- text-align:justify;
-}
-
-#singleColumn h1
-{ 
- font-size:20px;
- font-weight:bold;
- text-align:left;
- color:black;
- width:760px;
- line-height: 36px;
- margin-bottom:10px;
- border-bottom: 1px solid #ccc;
-}
-
-#singleColumn h2
-{ 
- font-size:18px;
- text-align:justify;
- color:black;
-}
-
-#singleColumn img
-{ 
- height:50px;
- text-align:center;
- color:black;
-}
-
-
 
 #item
 { 
@@ -136,15 +90,14 @@
 { 
  margin-left:40px;
  width:700px;
- height:200px;
+ height:50px;
 }
 
 #block img
 { 
  display:block;
  margin-left:auto;
- margin-right:auto;
- height:100px;
+ height:25px;
 }
 
 #block h1
@@ -179,14 +132,14 @@
 #block .left
 { 
  float:left;
- width:40%;
+ width:5%;
  /*background:red;*/
 }
 
 #block .right
 { 
  float:right;
- width:58%;
+ width:92%;
  /*background:green;*/
 }
 

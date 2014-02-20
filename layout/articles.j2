@@ -6,9 +6,19 @@
 <link rel="stylesheet" href="{{ media_url('css/publicacoes.css') }}">
 </head>
 
-{% for res in resource.node.walk_resources_sorted_by_time() %}
+<div id="page">
+
+{% set years = range(2014, 2000, -1) -%}
+{% for year in years -%}
+<h1> {{ year }} </h1>
+
+{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.Year == year -%}
  {{ render_article(res) }}
 {% endfor %}
+
+{% endfor %}
+
+</div>
 
 {% endblock %}
 
