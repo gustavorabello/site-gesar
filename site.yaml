@@ -33,12 +33,6 @@ context:
                 type: node
                 url: pessoas
             -
-                name: Publicacoes 
-                description: Publicacoes
-                css_class: publicacoes
-                type: node
-                url: publicacoes
-            -
                 name: Laboratorios
                 description: Laboratorios
                 css_class: laboratorios
@@ -50,6 +44,12 @@ context:
                 css_class: pesquisa
                 type: node
                 url: pesquisa
+            -
+                name: Publicacoes 
+                description: Publicacoes
+                css_class: publicacoes
+                type: node
+                url: publicacoes
 
 meta:
     nodemeta: meta.yaml
