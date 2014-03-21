@@ -55,8 +55,8 @@ meta:
     nodemeta: meta.yaml
     created: !!timestamp 2014-02-13 00:00:00
     author: Gustavo Anjos 
-	analytics:
-		id: UA-49193734-1
+    analytics:
+         id: UA-49193734-1
 sorter:
     time:
         attr:
