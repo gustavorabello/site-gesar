@@ -1,0 +1,44 @@
+{% extends "base.j2" %}
+{% from "macros.j2" import render_article with context  %}
+
+{% block main %}
+<head>
+<link rel="stylesheet" href="{{ media_url('css/publicacoes.css') }}">
+</head>
+
+<div id="page">
+
+<h1> Trabalhos em revistas </h1>
+<p>&nbsp;</p>
+{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.Type == "Journal" -%}
+ {{ render_article(res) }}
+{% endfor %}
+<p>&nbsp;</p>
+
+<h1> Trabalhos de congresso </h1>
+<p>&nbsp;</p>
+{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.Type == "Congress" -%}
+ {{ render_article(res) }}
+{% endfor %}
+<p>&nbsp;</p>
+
+<h1> Teses, dissertacoes e trabalhos de conclusao de curso de graduacao </h1>
+<p>&nbsp;</p>
+{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.Type == "PhD" -%}
+ {{ render_article(res) }}
+{% endfor %}
+{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.Type == "DSc" -%}
+ {{ render_article(res) }}
+{% endfor %}
+{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.Type == "MSc" -%}
+ {{ render_article(res) }}
+{% endfor %}
+{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.Type == "BSc" -%}
+ {{ render_article(res) }}
+{% endfor %}
+<p>&nbsp;</p>
+
+</div>
+
+{% endblock %}
+
