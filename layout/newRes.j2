@@ -8,21 +8,30 @@
 
 <div id="page">
 
+{% for res in resource.node.walk_resources_sorted_by_time() %}
+{%- if res.meta.Type == "Journal" %}
 <h1> Trabalhos em revistas </h1>
+{% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.Type == "Journal" -%}
  {{ render_article(res) }}
 {% endfor %}
 <p>&nbsp;</p>
 
+{% for res in resource.node.walk_resources_sorted_by_time() %}
+{%- if res.meta.Type == "Congress" %}
 <h1> Trabalhos de congresso </h1>
+{% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.Type == "Congress" -%}
  {{ render_article(res) }}
 {% endfor %}
 <p>&nbsp;</p>
 
+{% for res in resource.node.walk_resources_sorted_by_time() %}
+{%- if res.meta.Type == "PhD" or res.meta.Type == "DSc" or res.meta.Type == "MSc" or res.meta.Type == "BSc" %}
 <h1> Teses, dissertacoes e trabalhos de conclusao de curso de graduacao </h1>
+{% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.Type == "PhD" -%}
  {{ render_article(res) }}
@@ -34,6 +43,16 @@
  {{ render_article(res) }}
 {% endfor %}
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.Type == "BSc" -%}
+ {{ render_article(res) }}
+{% endfor %}
+<p>&nbsp;</p>
+
+{% for res in resource.node.walk_resources_sorted_by_time() %}
+{%- if res.meta.Type == "Report" %}
+<h1> Relat&oacute;rios t&eacute;cnicos </h1>
+{% break%}{% endif %}{% endfor %}
+<p>&nbsp;</p>
+{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.Type == "Report" -%}
  {{ render_article(res) }}
 {% endfor %}
 <p>&nbsp;</p>

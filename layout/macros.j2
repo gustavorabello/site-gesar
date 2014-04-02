@@ -37,32 +37,53 @@
   <div class="right">
 
    {% if res.meta.Type == 'Chapter' -%}
-	<p> {{ res.meta.Author}}, <b> {{ res.meta.Title }}</b>,{{res.meta.Book }}, 
-	{{ res.meta.Publisher }}, <b> {{ res.meta.Year }} </b> </p>
+	<p> {{ res.meta.Author}}, 
+	<b> {{ res.meta.Title }},</b>
+	{{res.meta.Book }}, 
+	{{ res.meta.Publisher }}, 
+	<b> {{ res.meta.Year }} </b> </p>
    {%- endif %}
    {% if res.meta.Type == 'Journal' -%}
-    <p> {{ res.meta.Author }}, <b> {{ res.meta.Title }}</b>, 
-    {{ res.meta.Journal }}, <b> {{ res.meta.Year }} </b> </p>
+    <p> {{ res.meta.Author }}, 
+	<b> {{ res.meta.Title }}</b>, 
+    {{ res.meta.Journal }}, 
+	<b> {{ res.meta.Year }} </b> </p>
    {%- endif %}
    {% if res.meta.Type == 'Congress' -%}
-    <p> {{ res.meta.Author }}, <b> {{ res.meta.Title }}</b>, 
-    {{ res.meta.Congress}}, <b> {{ res.meta.Year }} </b> </p>
+    <p> {{ res.meta.Author }}, 
+	<b> {{ res.meta.Title }}</b>, 
+    {{ res.meta.Congress}}, 
+	<b> {{ res.meta.Year }} </b> </p>
+   {%- endif %}
+   {% if res.meta.Type == 'Report' -%}
+    <p> {{ res.meta.Author }}, 
+	<b> {{ res.meta.Title }}</b>, 
+    {{ res.meta.Place}}, 
+	<b> {{ res.meta.Year }} </b> </p>
    {%- endif %}
    {% if res.meta.Type == 'Book' -%}
-    <p> {{ res.meta.Author }}, <b> {{ res.meta.Title }}</b>, 
-    {{ res.meta.Book}}, <b> {{ res.meta.Year }} </b> </p>
+    <p> {{ res.meta.Author }}, 
+	<b> {{ res.meta.Title }}</b>, 
+    {{ res.meta.Book}}, 
+	<b> {{ res.meta.Year }} </b> </p>
    {%- endif %}
    {% if res.meta.Type == 'BSc' -%}
-    <p> {{ res.meta.Author }}, <b> {{ res.meta.Title }}</b>, 
-	{{ res.meta.Place }}, <b> {{ res.meta.Year }} </b> </p>
+    <p> {{ res.meta.Author }}, 
+	<b> {{ res.meta.Title }}</b>, 
+	{{ res.meta.Place }}, 
+	<b> {{ res.meta.Year }} </b> </p>
    {%- endif %}
    {% if res.meta.Type == 'MSc' -%}
-    <p> {{ res.meta.Author }}, <b> {{ res.meta.Title }}</b>, 
-    {{ res.meta.Place }}, <b> {{ res.meta.Year }} </b> </p>
+    <p> {{ res.meta.Author }}, 
+	<b> {{ res.meta.Title }}</b>, 
+    {{ res.meta.Place }}, 
+	<b> {{ res.meta.Year }} </b> </p>
    {%- endif %}
    {% if res.meta.Type == 'PhD' -%}
-    <p> {{ res.meta.Author }}, <b> {{ res.meta.Title }}</b>, 
-    {{ res.meta.Place }}, <b> {{ res.meta.Year }} </b> </p>
+    <p> {{ res.meta.Author }}, 
+	<b> {{ res.meta.Title }}</b>, 
+    {{ res.meta.Place }}, 
+	<b> {{ res.meta.Year }} </b> </p>
    {%- endif %}
   </div>
  </div>
