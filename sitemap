@@ -1,0 +1,340 @@
+.
+├── content
+│   ├── index.html
+│   ├── laboratorios
+│   │   └── index.html
+│   ├── media
+│   │   ├── css
+│   │   │   ├── inicio.css
+│   │   │   ├── laboratorios.css
+│   │   │   ├── pesquisa.css
+│   │   │   ├── pessoas.css
+│   │   │   ├── publicacoes.css
+│   │   │   ├── site.css
+│   │   │   └── syntax.css
+│   │   ├── html
+│   │   │   ├── inicio
+│   │   │   │   └── transport.html
+│   │   │   ├── laboratorios
+│   │   │   │   ├── lec.html
+│   │   │   │   ├── led.html
+│   │   │   │   ├── len.html
+│   │   │   │   └── lep.html
+│   │   │   ├── news
+│   │   │   │   ├── feb
+│   │   │   │   │   └── aceiteLivroPontes.html
+│   │   │   │   └── mar
+│   │   │   │       └── mestradoSilveira.html
+│   │   │   ├── pesquisa
+│   │   │   │   ├── bifasico
+│   │   │   │   │   ├── congress
+│   │   │   │   │   │   ├── eci2012.html
+│   │   │   │   │   │   └── encit2008.html
+│   │   │   │   │   ├── escoamentos.html
+│   │   │   │   │   ├── journal
+│   │   │   │   │   │   └── hte2013.html
+│   │   │   │   │   ├── meta.yaml
+│   │   │   │   │   ├── phd
+│   │   │   │   │   │   └── phd.html
+│   │   │   │   │   └── publicacoes.html
+│   │   │   │   ├── disco
+│   │   │   │   │   ├── eletroquimica.html
+│   │   │   │   │   └── publicacoes.html
+│   │   │   │   ├── dislocation
+│   │   │   │   │   ├── congress
+│   │   │   │   │   │   ├── amitans2010.html
+│   │   │   │   │   │   └── sem2011.html
+│   │   │   │   │   ├── meta.yaml
+│   │   │   │   │   ├── publications.html
+│   │   │   │   │   └── text.html
+│   │   │   │   └── reservatorio
+│   │   │   │       ├── congress
+│   │   │   │       │   ├── encit2006.html
+│   │   │   │       │   └── posmec2006.html
+│   │   │   │       ├── hidreletricas.html
+│   │   │   │       ├── meta.yaml
+│   │   │   │       ├── publicacoes.html
+│   │   │   │       └── report
+│   │   │   │           ├── gesar1.html
+│   │   │   │           └── gesar2.html
+│   │   │   └── pessoas
+│   │   │       ├── jorge.html
+│   │   │       ├── lucena.html
+│   │   │       ├── mariana.html
+│   │   │       ├── norberto.html
+│   │   │       ├── peixoto.html
+│   │   │       ├── pontes.html
+│   │   │       ├── rabello.html
+│   │   │       ├── silveira.html
+│   │   │       ├── sonia.html
+│   │   │       └── vinicius.html
+│   │   ├── images
+│   │   │   ├── events
+│   │   │   │   └── 2014
+│   │   │   │       └── february
+│   │   │   │           └── 18
+│   │   │   │               ├── foto13.jpg
+│   │   │   │               ├── foto4.jpg
+│   │   │   │               ├── foto8.jpg
+│   │   │   │               └── foto9.jpg
+│   │   │   ├── img01.gif
+│   │   │   ├── img01.jpg
+│   │   │   ├── img02.gif
+│   │   │   ├── img02.jpg
+│   │   │   ├── img03.gif
+│   │   │   ├── img03.jpg
+│   │   │   ├── img04.jpg
+│   │   │   ├── img05.jpg
+│   │   │   ├── img06.jpg
+│   │   │   ├── img07.jpg
+│   │   │   ├── img08.gif
+│   │   │   ├── img08.jpg
+│   │   │   ├── img09.jpg
+│   │   │   ├── img10.jpg
+│   │   │   ├── img11.gif
+│   │   │   ├── img11.jpg
+│   │   │   ├── img12.jpg
+│   │   │   ├── labs
+│   │   │   │   ├── lec.jpg
+│   │   │   │   ├── led.jpg
+│   │   │   │   ├── len.jpg
+│   │   │   │   └── structure.jpg
+│   │   │   ├── logos
+│   │   │   │   ├── capes.png
+│   │   │   │   ├── cnpq.png
+│   │   │   │   ├── csf.png
+│   │   │   │   ├── delft.png
+│   │   │   │   ├── epfl.png
+│   │   │   │   ├── faperj.png
+│   │   │   │   ├── favicon.ico
+│   │   │   │   ├── fen.png
+│   │   │   │   ├── finep.png
+│   │   │   │   ├── gesar.png
+│   │   │   │   ├── googlescholar.png
+│   │   │   │   ├── lattes.png
+│   │   │   │   ├── periodicos.png
+│   │   │   │   ├── ppgem.png
+│   │   │   │   ├── scielo.png
+│   │   │   │   ├── scopus.png
+│   │   │   │   ├── svg
+│   │   │   │   │   ├── Universidade_Estadual_do_Rio_de_Janeiro.cdr
+│   │   │   │   │   ├── fen-uerj.svg
+│   │   │   │   │   └── fen.svg
+│   │   │   │   ├── uerj-bw.png
+│   │   │   │   ├── uerj-fen.png
+│   │   │   │   ├── uerj.png
+│   │   │   │   ├── ufrj.gif
+│   │   │   │   └── webofscience.png
+│   │   │   ├── pdf-icon.png
+│   │   │   ├── people
+│   │   │   │   ├── jorge.jpg
+│   │   │   │   ├── lucena.jpg
+│   │   │   │   ├── mariana.jpg
+│   │   │   │   ├── norberto.jpg
+│   │   │   │   ├── peixoto.jpg
+│   │   │   │   ├── pontes.jpg
+│   │   │   │   ├── rabello.jpg
+│   │   │   │   ├── silveira.jpg
+│   │   │   │   ├── sonia.jpg
+│   │   │   │   └── vinicius.jpg
+│   │   │   ├── ppt-icon.png
+│   │   │   ├── research
+│   │   │   │   ├── 2disks.png
+│   │   │   │   ├── 3Dbubble.png
+│   │   │   │   ├── 3Dmesh.png
+│   │   │   │   ├── 3d-vortex.png
+│   │   │   │   ├── bifasico.png
+│   │   │   │   ├── disk
+│   │   │   │   │   ├── fig1.png
+│   │   │   │   │   ├── fig2.png
+│   │   │   │   │   ├── fig3.png
+│   │   │   │   │   ├── fig4.png
+│   │   │   │   │   ├── fig5.png
+│   │   │   │   │   ├── fig6.png
+│   │   │   │   │   └── fig7.png
+│   │   │   │   ├── disk-davi.png
+│   │   │   │   ├── disk-peixoto.png
+│   │   │   │   ├── disk.png
+│   │   │   │   ├── dislocation
+│   │   │   │   │   ├── eq1.png
+│   │   │   │   │   ├── evolution.png
+│   │   │   │   │   ├── fig1.png
+│   │   │   │   │   ├── fig2.png
+│   │   │   │   │   ├── fig3.png
+│   │   │   │   │   └── fig4.png
+│   │   │   │   ├── reservoir
+│   │   │   │   │   ├── reserv1.png
+│   │   │   │   │   ├── reserv2.png
+│   │   │   │   │   ├── reserv3.png
+│   │   │   │   │   ├── simC225.png
+│   │   │   │   │   └── simU225.png
+│   │   │   │   ├── risingBubble.png
+│   │   │   │   ├── sessileDrop.png
+│   │   │   │   ├── singleVortex.png
+│   │   │   │   └── vector
+│   │   │   │       ├── 2disks.fig
+│   │   │   │       ├── bifasico.svg
+│   │   │   │       └── disk.fig
+│   │   │   ├── spain-flag.gif
+│   │   │   └── uk-flag.gif
+│   │   ├── js
+│   │   │   └── libs
+│   │   │       ├── dd_belatedpng.js
+│   │   │       ├── jquery-1.5.1.min.js
+│   │   │       ├── meta.yaml
+│   │   │       └── modernizr-1.7.min.js
+│   │   ├── meta.yaml
+│   │   ├── pdf
+│   │   │   ├── news
+│   │   │   │   ├── femsimFurnas.pdf
+│   │   │   │   └── gesarFurnas.pdf
+│   │   │   └── research
+│   │   │       ├── disk
+│   │   │       │   ├── chapter-001.pdf
+│   │   │       │   ├── congress-018.pdf
+│   │   │       │   ├── congress-019.pdf
+│   │   │       │   ├── congress-020.pdf
+│   │   │       │   ├── congress-021.pdf
+│   │   │       │   ├── congress-022.pdf
+│   │   │       │   ├── congress-023.pdf
+│   │   │       │   ├── congress-024.pdf
+│   │   │       │   ├── congress-025.pdf
+│   │   │       │   ├── journal-002.pdf
+│   │   │       │   ├── journal-003.pdf
+│   │   │       │   ├── msc-003.pdf
+│   │   │       │   ├── msc-004.pdf
+│   │   │       │   └── msc-006.pdf
+│   │   │       ├── dislocation
+│   │   │       │   ├── amitans2010.pdf
+│   │   │       │   └── sem2011.pdf
+│   │   │       ├── lucena
+│   │   │       │   ├── cobem-2013.pdf
+│   │   │       │   ├── encit-2012.pdf
+│   │   │       │   └── msc-rachel.pdf
+│   │   │       ├── peixoto
+│   │   │       │   ├── cmacNE2012.pdf
+│   │   │       │   ├── cobem2011.pdf
+│   │   │       │   ├── cobem2013.pdf
+│   │   │       │   ├── encit2012.pdf
+│   │   │       │   ├── encit2012b.pdf
+│   │   │       │   ├── enief2013.pdf
+│   │   │       │   ├── msc2011.pdf
+│   │   │       │   └── wee2011.pdf
+│   │   │       ├── rabello
+│   │   │       │   ├── eci2012.pdf
+│   │   │       │   ├── encit2006.pdf
+│   │   │       │   ├── encit2008.pdf
+│   │   │       │   ├── hte2013.pdf
+│   │   │       │   ├── msc2007.pdf
+│   │   │       │   ├── phd2012.pdf
+│   │   │       │   └── posmec2006.pdf
+│   │   │       ├── reservoir
+│   │   │       │   ├── gesar1.pdf
+│   │   │       │   └── gesar2.pdf
+│   │   │       └── silveira
+│   │   │           ├── cobem2013.pdf
+│   │   │           └── msc-silveira.pdf
+│   │   └── xml
+│   │       ├── mariana.xml
+│   │       ├── peixoto.xml
+│   │       ├── rachel.xml
+│   │       └── silveira.xml
+│   ├── pesquisa
+│   │   ├── bifasicos.html
+│   │   ├── dislocations.html
+│   │   ├── index.html
+│   │   ├── meta.yaml
+│   │   ├── reservatorios.html
+│   │   ├── rotatorios.html
+│   │   └── tags
+│   │       ├── disco.html
+│   │       ├── dislocation.html
+│   │       ├── estabilidade.html
+│   │       ├── hidreletrica.html
+│   │       ├── material.html
+│   │       ├── reseravtorio.html
+│   │       └── reservatorio.html
+│   ├── pessoas
+│   │   └── index.html
+│   └── publicacoes
+│       ├── disk
+│       │   ├── bsc
+│       │   │   ├── conceicao2004.html
+│       │   │   └── niederauer2003.html
+│       │   ├── chapter
+│       │   │   └── emc2012.html
+│       │   ├── congress
+│       │   │   ├── cobem2012.html
+│       │   │   ├── encit2002.html
+│       │   │   ├── eptt2002.html
+│       │   │   └── scc2002.html
+│       │   ├── journal
+│       │   │   ├── bmse2002.html
+│       │   │   ├── jcis2014.html
+│       │   │   ├── jes2008.html
+│       │   │   ├── pop2004.html
+│       │   │   └── pop2007.html
+│       │   └── msc
+│       │       ├── ferreira2013.html
+│       │       ├── gaoma2013.html
+│       │       └── silva2012.html
+│       ├── index.html
+│       ├── lucena
+│       │   ├── congress
+│       │   │   ├── cobem2013.html
+│       │   │   └── encit2012.html
+│       │   └── msc
+│       │       └── msc.html
+│       ├── meta.yaml
+│       ├── peixoto
+│       │   ├── congress
+│       │   │   ├── cmacNE2012.html
+│       │   │   ├── cobem2011.html
+│       │   │   ├── cobem2013.html
+│       │   │   ├── encit2012.html
+│       │   │   ├── encit2012b.html
+│       │   │   ├── enief2013.html
+│       │   │   └── wee2011.html
+│       │   └── msc
+│       │       └── msc.html
+│       ├── rabello
+│       │   ├── congress
+│       │   │   ├── eci2012.html
+│       │   │   ├── encit2006.html
+│       │   │   ├── encit2008.html
+│       │   │   └── posmec2006.html
+│       │   ├── journal
+│       │   │   ├── bmse2014.html
+│       │   │   └── hte2013.html
+│       │   ├── msc
+│       │   │   └── msc.html
+│       │   └── phd
+│       │       └── phd.html
+│       ├── reservoir
+│       │   └── report
+│       │       ├── gesar1.html
+│       │       └── gesar2.html
+│       └── silveira
+│           ├── congress
+│           │   └── cobem2013.html
+│           └── msc
+│               └── msc.html
+├── info.yaml
+├── layout
+│   ├── analytics.j2
+│   ├── articles.j2
+│   ├── atom.j2
+│   ├── base.j2
+│   ├── blog.j2
+│   ├── devmode.j2
+│   ├── listing.j2
+│   ├── macros.j2
+│   ├── newRes.j2
+│   ├── publication.j2
+│   ├── research.j2
+│   └── tagged_posts.j2
+├── site.yaml
+├── test
+└── test.html
+
+76 directories, 261 files
