@@ -4,13 +4,14 @@
 
 #singleColumn
 { 
- width:720px;
+ width:780px;
  padding-bottom:20px;
  padding-top:20px; 
  padding-right:30px;
  text-align:center; 
  font-size:13px; 
  letter-spacing:-1px;
+ height:auto;
 }
 
 #singleColumn a
@@ -52,7 +53,7 @@
  font-weight:bold;
  text-align:left;
  color:black;
- width:760px;
+ width:800px;
  line-height: 36px;
  margin-bottom:10px;
  border-bottom: 1px solid #ccc;
@@ -134,9 +135,10 @@
 
 #block
 { 
- margin-left:40px;
- width:700px;
- height:200px;
+ margin-left:30px;
+ width:760px;
+ height:210px;
+ /*background:red;*/
 }
 
 #block img
@@ -179,7 +181,7 @@
 #block .left
 { 
  float:left;
- width:40%;
+ width:33%;
  /*background:red;*/
 }
 
@@ -194,7 +196,6 @@
 { 
  display:block;
  float:left;
- padding-left:15px;
  width:40%;
  /*background:red;*/
 }
@@ -203,7 +204,6 @@
 { 
  display:block;
  float:right;
- padding-right:15px;
  width:40%;
  /*background:green;*/
 }
