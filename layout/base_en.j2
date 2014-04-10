@@ -68,25 +68,25 @@
 			  </div>
 		  <div class="column2">
             <h1>Gesar</h1>
-			<h2> UDT - Unidade de Desenvolvimento Tecnol&oacute;gico </h2>
-            <h3> UERJ - Universidade do Estado do Rio de Janeiro </h3>
+			<h2> UDT - Technological Development Unit </h2>
+            <h3> UERJ - State University of Rio de Janeiro </h3>
 			  </div>
 		  <div class="column3">
 		    <b> Gesar </b> <br>
 			Rua Fonseca Teles, 121 <br>
 			S&atilde;o Crist&oacute;v&atilde;o, Rio de Janeiro <br>
-			20940-903 RJ - Brasil <br>
-			<b> Tel: </b> +55 21 2332-4733 <br>
+			20940-903 RJ - Brazil <br>
+			<b> Phone: </b> +55 21 2332-4733 <br>
 			<b> E-mail: </b> <a href="mailto:gesar@uerj.br" 
 			 target="_top"> gesar@uerj.br </a> <br>
-			<b> Onde estamos: </b> 
-			<a href="https://goo.gl/maps/TAMIu" target="_blank"> mapa </a> <br>
-			<b> Como chegar: </b> 
-			<a href={{ media_url('html/inicio/transport.html') }}> &ocirc;nibus/metro/trem </a> 
+			<b> Where we are: </b> 
+			<a href="https://goo.gl/maps/TAMIu" target="_blank"> map </a> <br>
+			<b> How to find us: </b> 
+			<a href={{ media_url('html/inicio/transport.html') }}> bus/subway/train </a> 
 		   </div>
           {%- endblock %}
           {% block nav %}
-          {% from "macros.j2" import render_nav with context %}
+          {% from "macros_en.j2" import render_nav with context %}
           {{ render_nav(menu, 'main_nav') }}
           {% endblock %}
           </header>

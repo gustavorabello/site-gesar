@@ -1,0 +1,84 @@
+{% extends "base_en.j2" %}
+{% from "macros_en.j2" import render_person with context  %}
+
+{% block main %}
+<head>
+<link rel="stylesheet" href="{{ media_url('css/pessoas.css') }}">
+</head>
+
+<div id="singleColumn">
+
+{% for res in resource.node.walk_resources_sorted_by_time() %}
+{%- if res.meta.level == "professor" %}
+<h1> PROFESSORS </h1>
+{% break%}{% endif %}{% endfor %}
+<p>&nbsp;</p>
+{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "professor" -%}
+ {{ render_person(res) }}
+{% endfor %}
+<p>&nbsp;</p>
+
+{% for res in resource.node.walk_resources_sorted_by_time() %}
+{%- if res.meta.level == "research" %}
+<h1> RESEARCHERS </h1>
+{% break%}{% endif %}{% endfor %}
+<p>&nbsp;</p>
+{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "research" -%}
+ {{ render_person(res) }}
+{% endfor %}
+<p>&nbsp;</p>
+
+{% for res in resource.node.walk_resources_sorted_by_time() %}
+{%- if res.meta.level == "phd" %}
+<h1> DOCTORAL STUDENTS </h1>
+{% break%}{% endif %}{% endfor %}
+<p>&nbsp;</p>
+{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "phd" -%}
+ {{ render_person(res) }}
+{% endfor %}
+<p>&nbsp;</p>
+
+{% for res in resource.node.walk_resources_sorted_by_time() %}
+{%- if res.meta.level == "msc" %}
+<h1> MASTERS STUDENTS </h1>
+{% break%}{% endif %}{% endfor %}
+<p>&nbsp;</p>
+{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "msc" -%}
+ {{ render_person(res) }}
+{% endfor %}
+<p>&nbsp;</p>
+
+{% for res in resource.node.walk_resources_sorted_by_time() %}
+{%- if res.meta.level == "grad" %}
+<h1> SCIENTIFIC INICIATION </h1>
+{% break%}{% endif %}{% endfor %}
+<p>&nbsp;</p>
+{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "grad" -%}
+ {{ render_person(res) }}
+{% endfor %}
+<p>&nbsp;</p>
+
+{% for res in resource.node.walk_resources_sorted_by_time() %}
+{%- if res.meta.level == "admin" %}
+<h1> ADMINSTRATIVE SUPPORT </h1>
+{% break%}{% endif %}{% endfor %}
+<p>&nbsp;</p>
+{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "admin" -%}
+ {{ render_person(res) }}
+{% endfor %}
+<p>&nbsp;</p>
+
+{% for res in resource.node.walk_resources_sorted_by_time() %}
+{%- if res.meta.level == "tec" %}
+<h1> TECHNICAL SUPPORT </h1>
+{% break%}{% endif %}{% endfor %}
+<p>&nbsp;</p>
+{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "tec" -%}
+ {{ render_person(res) }}
+{% endfor %}
+<p>&nbsp;</p>
+
+</div>
+
+{% endblock %}
+

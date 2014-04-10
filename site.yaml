@@ -22,34 +22,44 @@ context:
         menu:
             -
                 name: In&iacute;cio
+                name_en: Home
                 description: In&iacute;cio
                 css_class: inicio
                 type: page
                 url: index.html
+                url_en: index_en.html
             -
                 name: Pessoas
+                name_en: People
                 description: Pessoas
                 css_class: pessoas
                 type: node
                 url: pessoas
+                url_en: people
             -
                 name: Laborat&oacute;rios
+                name_en: Laboratory 
                 description: Laborat&oacute;rios
                 css_class: laboratorios
                 type: node
                 url: laboratorios
+                url_en: laboratories
             -
                 name: Pesquisa
+                name_en: Research
                 description: Pesquisa
                 css_class: pesquisa
                 type: node
                 url: pesquisa
+                url_en: research
             -
                 name: Publica&ccedil;&otilde;es 
+                name_en: Publications
                 description: Publica&ccedil;&otilde;es
                 css_class: publicacoes
                 type: node
                 url: publicacoes
+                url_en: publications
 
 meta:
     nodemeta: meta.yaml
