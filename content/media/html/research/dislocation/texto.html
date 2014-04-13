@@ -14,8 +14,8 @@ description: GESAR Home page
  <div id="simple">
   <p>&nbsp;</p>
 
-  <h1> Modelling dislocation dynamics in materials subjected to cyclic
-   loading </h1>
+  <h1> Modelagem da din&acirc;mica de discord&acirc;ncias em materiais
+   submetidos a carregamento c&iacute;clico </h1>
 
   <p>&nbsp;</p>
   <p>&nbsp;</p>
@@ -34,62 +34,106 @@ description: GESAR Home page
   <p>&nbsp;</p>
 
   <p>&nbsp;</p>
-  <p> Strain localization and dislocation pattern formation are typical
-  features of plastic deformation in metals and alloys. Glide and climb
-  dislocation motion along with accompanying production -annihilation
-  processes of dislocations lead to the occurrence of instabilities of
-  initially uniform dislocation distributions. These instabilities
-  result into the development of various types of dislocation
-  micro-structures, such as dislocation cells, slip and kink bands,
-  persistent slip bands, labyrinth structures, etc., depending on the
-  externally applied loading and the intrinsic lattice constraints. The
-  Walgraef-Aifantis (WA) (Walgraef and Aifanits, J. Appl. Phys., 58,
-  668, 1985) model is an example of a reaction-diffusion model of
-  coupled nonlinear equations which describe  formation of forest
-  (immobile),  and gliding (mobile) dislocation densities in the
-  presence of cyclic loading. The model reads: Static and mobile
-  dislocation densities are denoted by &rho;<sub>s</sub> and
-  &rho;<sub>m</sub> respectively, time is measured in number of cycles
-  of loading, Ds represents the effective diffusion within the forest
-  resulting from the thermal mobility and climb and Dm represents the
-  effective diffusion resulting from the glide of mobile dislocations
-  between obstacles (Dm ≫ Ds). The coefficient dc is the characteristic
-  length of spontaneous dipole collapse. &beta; is the rate of
-  dislocation freeing from the forest and is associated with the
-  de-stabilization of dislocation dipoles or clusters under stress. We
-  use two versions of the WA model, the first one comprising linear
-  diffusion of the density of mobile dislocations and the second one,
-  with nonlinear diffusion of said variable. A finite difference, second
-  order in time Cranck-Nicholson semi-implicit scheme, with internal
-  iterations at each time step and a spatial splitting using the
-  Stabilizing, Correction (Christov and Pontes, Mathematical and
-  Computer 0, 35, 87, 2002) is used for solving the model evolution
-  equations in two dimensions. The discussion on the WA model and on the
-  numerical scheme was presented by Pontes et al. (AIP Conference
-  Proceedings, Vol. 1301 pp. 511-519, 2010 and T. Proulx (ed.), Optical
-  Measurements, Modeling, and Metrology, Volume 5, Conference
-  Proceedings of the Society for Experimental 97 Mechanics Series
-  9999999, DOI 10.1007/978-1-4614-0228-2_14, © The Society for
-  Experimental Mechanics, Inc. 2011). </p> <p>&nbsp;</p>
-  
+  <p> Metais e ligas submetidos a carregamento c&iacute;clico e operando
+  no regime plastico comumente apresentam deforma&ccedil;&otilde;es
+  localizadas e forma&ccedil;&atilde;o de estruturas espaciais de
+  discord&acirc;ncias. Movimentos nas dire&ccedil;&otilde;es paralela e
+  perpendicular &agrave; floresta de discord&acirc;ncias fixas,
+  acompanhados da cria&ccedil;&atilde;o e o colapso de
+  discord&acirc;ncias conduzem &agrave; instabilidade de distribuicoes
+  espacias inicialmentede homog&ecirc;neas dos defeitos da estrutura
+  cristalina. Essas instabilidades levam ao surgimento de v&aacute;rios
+  tipos de micro-estruturas, tais  como c&eacute;lulas de
+  discord&acirc;ncias, bandas de escorregamento persistentes ou
+  n&atilde;o, estruturas em labirinto, etc. </p> 
+
+  <p>&nbsp;</p>
+
+  <p> Um poss&iacute;vel caminho para o estudo da forma&ccedil;&atilde;o
+  e evolu&ccedil;&atilde;o de estruturas de discord&acirc;ncias consiste
+  na modelagem atrav&eacute;s de equa&ccedil;&otilde;es
+  rea&ccedil;&atilde;o-difus&atilde;o. Exemplo de modelo de duas
+  equa&ccedil;&otilde;es, utilizado no estudo da forma&ccedil;&atilde;o
+  de florestas de discor&acirc;ncias im&oacute;veis e m&oacute;veis, na
+  presen&ccedil;a de carregamento c&iacute;clico &eacute; o proposto por
+  Walgraef e Aifantis (modelo WA - Walgraef and Aifanits, J. Appl.
+  Phys.,c58, 668, 1985). O modelo tem a forma: </p>
+
+  <p>&nbsp;</p>
 
   <img src={{ media_url('images/research/dislocation/eq1.png') }} 
   height="80px" align="middle">
+
+  <p>&nbsp;</p>
+
+  <p> onde &rho; e &rho; representam as densidades de
+  discord&acirc;ncias fixas e m&oacute;veis, respectivamente. O tempo
+  &eacute; medido em n&uacute;mero de ciclos de aplica&ccedil;&atilde;o
+  de carga, Ds representa o coeficiente de difus&atilde;o efetiva dentro
+  da floresta de discord&acirc;ncias fixas, que resulta da mobilidade
+  t&eacute;rmica e Dm, o coeficiente de difus&atilde;o de
+  discord&acirc;ncias m&oacute;veis. O coeficiente dc representa a
+  dist&acirc;ncia caracter&iacute;stica percorrida por um dipolo
+  at&eacute; a ruptura, &beta; &eacute; a taxa de convers&atilde;o de
+  discord&acirc;ncias fixas (floresta) em m&oacute;veis e associa-se
+  &agrave; perda de estabilidade de dipolos e de agregados de
+  discord&acirc;nicas sob efeito de carregamento externo. </p>
+
+  <p>&nbsp;</p>
+
+  <p> Para a integra&ccedil;&atilde;o num&eacute;rica do modelo WA
+  utilizamos um esquema de diferen&ccedil;as finitas de segunda ordem no
+  tempo do tipo Cranck-Nicholson com itera&ccedil;&otilde;es internas em
+  cada passo de tempo, desacoplando sucessivamente as linhas e as
+  colunas das matrizes que armazenam, respectivamente, o valor da
+  densidade de discord&acirc;ncias fixas e m&oacute;veis nos n&oacute;s
+  da malha espacial, atrav&eacute;s do m&eacute;todo da
+  Corre&ccedil;&atilde;o Estabilizadora (Christov and Pontes,
+  Mathematical and Computer 0, 35, 87, 2002) is used for solving the
+  model evolution equations in two dimensions. The discussion on the WA
+  model and on the numerical scheme was presented by Pontes et al. (AIP
+  Conference Proceedings, Vol. 1301 pp. 511-519, 2010 and T. Proulx
+  (ed.), Optical Measurements, Modeling, and Metrology, Volume 5,
+  Conference Proceedings of the Society for Experimental 97 Mechanics
+  Series 9999999, DOI 10.1007/978-1-4614-0228-2_14, The Society for
+  Experimental Mechanics, Inc. 2011). </p>
   
   <p>&nbsp;</p>
-  <p> Results were obtained both for
-  simulations, with linear diffusion of the mobile dislocations and
-  three with nonlinear diffusion are presented. The simulations mimic
-  several phenomena experimentally observed, like the increase of the
-  fundamental wavelength of the structure, the increase of the walls
-  height and the decrease of its thickness.</p>
-  
+
+  <p> Apresentamos nas duas figuras abaixo o resultado de duas
+  simula&ccedil;&otilde;es: </p>
+
   <p>&nbsp;</p>
-  
-  <img src={{ media_url('images/research/dislocation/evolution.png') }} 
+
+  <p> 1. Configura&ccedil;&atilde;o com difus&atilde;o linear da
+  distribui&ccedil;&atilde;o de discord&acirc;ncias m&oacute;veis. A
+  figura mostra a evolu&ccedil;&atilde;o da distribui&ccedil;&atilde;o
+  de densidade de discord&acirc;ncias fixas partindo de
+  condi&ccedil;&atilde;o inicial consistindo de densidade nula de
+  discord&acirc;nicas m&oacute;veis em todo o dom&iacute;nio e nula de
+  discord&acirc;ncias fixas em todo o dom&iacute;nio com
+  exce&ccedil;&atilde;o de uma faixa central, onde tem-se uma
+  distribui&ccedil;&atilde;o aleat&oacute;ria. </p>
+
+  <img src={{ media_url('images/research/dislocation/discordancias1.png') }} 
   height="650px" align="middle">
+
+  <p> 2. Configura&ccedil;&atilde;o com difus&atilde;o n&atilde;o linear
+  da distribui&ccedil;&atilde;o de discord&acirc;ncias m&oacute;veis. A
+  figura mostra a evolu&ccedil;&atilde;o da distribui&ccedil;&atilde;o
+  de densidade de discord&acirc;ncias fixas partindo de
+  condi&ccedil;&atilde;o inicial consistindo da distribuicao homogenea
+  de equiibrio de discord&acirc;nicas acrescida de uma distribuicao
+  aleatoria. </p>
+
+  <img src={{ media_url('images/research/dislocation/discordancias2.png') }} 
+  height="650px" align="middle">
+
+  <p> Em ambas as simula&ccedil;&otilde;es observa-se a
+  reprodu&ccedil;&atilde;o de fen&ocirc;menos observados
+  experimentalmente, como aumento do comprimento de onda fundamental,
+  aumento da altura e redu&ccedil;&atilde;o da espessura das paredes de
+  discord&acirc;ncias com o n&iacute;vel de for&ccedil;agem. </p>
 
  </div>
 </body>
-
-

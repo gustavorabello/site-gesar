@@ -1,3 +1,0 @@
-extends: publication.j2
-default_block: post
-listable: true
