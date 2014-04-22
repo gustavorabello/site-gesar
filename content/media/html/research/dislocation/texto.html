@@ -1,139 +1,128 @@
 ---
-extends: base.j2
-default_block: main
+extends: post.j2
+default_block: text
 title: Discord&acirc;ncia em materias no GESAR
 description: GESAR Home page
 ---
 
-<head>
- <link rel="stylesheet" href="{{ media_url('css/pesquisa.css') }}">
-</head>
+# Modelagem da din&acirc;mica de discord&acirc;ncias em materiais submetidos a carregamento c&iacute;clico 
 
+&nbsp;
+&nbsp;
 
-<body>
- <div id="simple">
-  <p>&nbsp;</p>
+<h1> <iframe width="320" height="200"
+ src="//www.youtube.com/embed/vl-lrQ5q54g?rel=0&loop=1" frameborder="0"
+ allowfullscreen></iframe> 
+&nbsp;
+<iframe width="320" height="200"
+ src="//www.youtube.com/embed/Vkas6HrsDF0?rel=0&loop=1" frameborder="0"
+ allowfullscreen></iframe>
+&nbsp;
+<iframe width="320" height="200"
+ src="//www.youtube.com/embed/6IIQ2x8sGP0?rel=0&loop=1" frameborder="0"
+ allowfullscreen></iframe></h1>
+&nbsp;
 
-  <h1> Modelagem da din&acirc;mica de discord&acirc;ncias em materiais
-   submetidos a carregamento c&iacute;clico </h1>
+&nbsp;
 
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  
-  <h1> <iframe width="320" height="200"
-   src="//www.youtube.com/embed/vl-lrQ5q54g?rel=0&loop=1" frameborder="0"
-   allowfullscreen></iframe> 
-  <p>&nbsp;</p>
-  <iframe width="320" height="200"
-   src="//www.youtube.com/embed/Vkas6HrsDF0?rel=0&loop=1" frameborder="0"
-   allowfullscreen></iframe>
-  <p>&nbsp;</p>
-  <iframe width="320" height="200"
-   src="//www.youtube.com/embed/6IIQ2x8sGP0?rel=0&loop=1" frameborder="0"
-   allowfullscreen></iframe></h1>
-  <p>&nbsp;</p>
+Metais e ligas submetidos a carregamento c&iacute;clico e operando no
+regime plastico comumente apresentam deforma&ccedil;&otilde;es
+localizadas e forma&ccedil;&atilde;o de estruturas espaciais de
+discord&acirc;ncias. Movimentos nas dire&ccedil;&otilde;es paralela e
+perpendicular &agrave; floresta de discord&acirc;ncias fixas,
+acompanhados da cria&ccedil;&atilde;o e o colapso de discord&acirc;ncias
+conduzem &agrave; instabilidade de distribuicoes espacias inicialmentede
+homog&ecirc;neas dos defeitos da estrutura cristalina. Essas
+instabilidades levam ao surgimento de v&aacute;rios tipos de
+micro-estruturas, tais  como c&eacute;lulas de discord&acirc;ncias,
+bandas de escorregamento persistentes ou n&atilde;o, estruturas em
+labirinto, etc.  
 
-  <p>&nbsp;</p>
-  <p> Metais e ligas submetidos a carregamento c&iacute;clico e operando
-  no regime plastico comumente apresentam deforma&ccedil;&otilde;es
-  localizadas e forma&ccedil;&atilde;o de estruturas espaciais de
-  discord&acirc;ncias. Movimentos nas dire&ccedil;&otilde;es paralela e
-  perpendicular &agrave; floresta de discord&acirc;ncias fixas,
-  acompanhados da cria&ccedil;&atilde;o e o colapso de
-  discord&acirc;ncias conduzem &agrave; instabilidade de distribuicoes
-  espacias inicialmentede homog&ecirc;neas dos defeitos da estrutura
-  cristalina. Essas instabilidades levam ao surgimento de v&aacute;rios
-  tipos de micro-estruturas, tais  como c&eacute;lulas de
-  discord&acirc;ncias, bandas de escorregamento persistentes ou
-  n&atilde;o, estruturas em labirinto, etc. </p> 
+&nbsp;
 
-  <p>&nbsp;</p>
+Um poss&iacute;vel caminho para o estudo da forma&ccedil;&atilde;o e
+evolu&ccedil;&atilde;o de estruturas de discord&acirc;ncias consiste na
+modelagem atrav&eacute;s de equa&ccedil;&otilde;es
+rea&ccedil;&atilde;o-difus&atilde;o. Exemplo de modelo de duas
+equa&ccedil;&otilde;es, utilizado no estudo da forma&ccedil;&atilde;o de
+florestas de discor&acirc;ncias im&oacute;veis e m&oacute;veis, na
+presen&ccedil;a de carregamento c&iacute;clico &eacute; o proposto por
+Walgraef e Aifantis (modelo WA - Walgraef and Aifanits, J. Appl.
+Phys.,c58, 668, 1985). O modelo tem a forma: 
 
-  <p> Um poss&iacute;vel caminho para o estudo da forma&ccedil;&atilde;o
-  e evolu&ccedil;&atilde;o de estruturas de discord&acirc;ncias consiste
-  na modelagem atrav&eacute;s de equa&ccedil;&otilde;es
-  rea&ccedil;&atilde;o-difus&atilde;o. Exemplo de modelo de duas
-  equa&ccedil;&otilde;es, utilizado no estudo da forma&ccedil;&atilde;o
-  de florestas de discor&acirc;ncias im&oacute;veis e m&oacute;veis, na
-  presen&ccedil;a de carregamento c&iacute;clico &eacute; o proposto por
-  Walgraef e Aifantis (modelo WA - Walgraef and Aifanits, J. Appl.
-  Phys.,c58, 668, 1985). O modelo tem a forma: </p>
+&nbsp;
 
-  <p>&nbsp;</p>
+<img src={{ media_url('images/research/dislocation/eq1.png') }} 
+height="80px" align="middle">
 
-  <img src={{ media_url('images/research/dislocation/eq1.png') }} 
-  height="80px" align="middle">
+&nbsp;
 
-  <p>&nbsp;</p>
+onde &rho; e &rho; representam as densidades de discord&acirc;ncias
+fixas e m&oacute;veis, respectivamente. O tempo &eacute; medido em
+n&uacute;mero de ciclos de aplica&ccedil;&atilde;o de carga, Ds
+representa o coeficiente de difus&atilde;o efetiva dentro da floresta de
+discord&acirc;ncias fixas, que resulta da mobilidade t&eacute;rmica e
+Dm, o coeficiente de difus&atilde;o de discord&acirc;ncias
+m&oacute;veis. O coeficiente dc representa a dist&acirc;ncia
+caracter&iacute;stica percorrida por um dipolo at&eacute; a ruptura,
+&beta; &eacute; a taxa de convers&atilde;o de discord&acirc;ncias fixas
+(floresta) em m&oacute;veis e associa-se &agrave; perda de estabilidade
+de dipolos e de agregados de discord&acirc;nicas sob efeito de
+carregamento externo. 
 
-  <p> onde &rho; e &rho; representam as densidades de
-  discord&acirc;ncias fixas e m&oacute;veis, respectivamente. O tempo
-  &eacute; medido em n&uacute;mero de ciclos de aplica&ccedil;&atilde;o
-  de carga, Ds representa o coeficiente de difus&atilde;o efetiva dentro
-  da floresta de discord&acirc;ncias fixas, que resulta da mobilidade
-  t&eacute;rmica e Dm, o coeficiente de difus&atilde;o de
-  discord&acirc;ncias m&oacute;veis. O coeficiente dc representa a
-  dist&acirc;ncia caracter&iacute;stica percorrida por um dipolo
-  at&eacute; a ruptura, &beta; &eacute; a taxa de convers&atilde;o de
-  discord&acirc;ncias fixas (floresta) em m&oacute;veis e associa-se
-  &agrave; perda de estabilidade de dipolos e de agregados de
-  discord&acirc;nicas sob efeito de carregamento externo. </p>
+&nbsp;
 
-  <p>&nbsp;</p>
+Para a integra&ccedil;&atilde;o num&eacute;rica do modelo WA utilizamos
+um esquema de diferen&ccedil;as finitas de segunda ordem no tempo do
+tipo Cranck-Nicholson com itera&ccedil;&otilde;es internas em cada passo
+de tempo, desacoplando sucessivamente as linhas e as colunas das
+matrizes que armazenam, respectivamente, o valor da densidade de
+discord&acirc;ncias fixas e m&oacute;veis nos n&oacute;s da malha
+espacial, atrav&eacute;s do m&eacute;todo da Corre&ccedil;&atilde;o
+Estabilizadora (Christov and Pontes, Mathematical and Computer 0, 35,
+87, 2002) is used for solving the model evolution equations in two
+dimensions. The discussion on the WA model and on the numerical scheme
+was presented by Pontes et al. (AIP Conference Proceedings, Vol. 1301
+pp. 511-519, 2010 and T. Proulx (ed.), Optical Measurements, Modeling,
+and Metrology, Volume 5, Conference Proceedings of the Society for
+Experimental 97 Mechanics Series 9999999, DOI
+10.1007/978-1-4614-0228-2_14, The Society for Experimental Mechanics,
+Inc. 2011). 
 
-  <p> Para a integra&ccedil;&atilde;o num&eacute;rica do modelo WA
-  utilizamos um esquema de diferen&ccedil;as finitas de segunda ordem no
-  tempo do tipo Cranck-Nicholson com itera&ccedil;&otilde;es internas em
-  cada passo de tempo, desacoplando sucessivamente as linhas e as
-  colunas das matrizes que armazenam, respectivamente, o valor da
-  densidade de discord&acirc;ncias fixas e m&oacute;veis nos n&oacute;s
-  da malha espacial, atrav&eacute;s do m&eacute;todo da
-  Corre&ccedil;&atilde;o Estabilizadora (Christov and Pontes,
-  Mathematical and Computer 0, 35, 87, 2002) is used for solving the
-  model evolution equations in two dimensions. The discussion on the WA
-  model and on the numerical scheme was presented by Pontes et al. (AIP
-  Conference Proceedings, Vol. 1301 pp. 511-519, 2010 and T. Proulx
-  (ed.), Optical Measurements, Modeling, and Metrology, Volume 5,
-  Conference Proceedings of the Society for Experimental 97 Mechanics
-  Series 9999999, DOI 10.1007/978-1-4614-0228-2_14, The Society for
-  Experimental Mechanics, Inc. 2011). </p>
-  
-  <p>&nbsp;</p>
+&nbsp;
 
-  <p> Apresentamos nas duas figuras abaixo o resultado de duas
-  simula&ccedil;&otilde;es: </p>
+Apresentamos nas duas figuras abaixo o resultado de duas
+simula&ccedil;&otilde;es: 
 
-  <p>&nbsp;</p>
+&nbsp;
 
-  <p> 1. Configura&ccedil;&atilde;o com difus&atilde;o linear da
-  distribui&ccedil;&atilde;o de discord&acirc;ncias m&oacute;veis. A
-  figura mostra a evolu&ccedil;&atilde;o da distribui&ccedil;&atilde;o
-  de densidade de discord&acirc;ncias fixas partindo de
-  condi&ccedil;&atilde;o inicial consistindo de densidade nula de
-  discord&acirc;nicas m&oacute;veis em todo o dom&iacute;nio e nula de
-  discord&acirc;ncias fixas em todo o dom&iacute;nio com
-  exce&ccedil;&atilde;o de uma faixa central, onde tem-se uma
-  distribui&ccedil;&atilde;o aleat&oacute;ria. </p>
+* Configura&ccedil;&atilde;o com difus&atilde;o linear da
+distribui&ccedil;&atilde;o de discord&acirc;ncias m&oacute;veis. A
+figura mostra a evolu&ccedil;&atilde;o da distribui&ccedil;&atilde;o de
+densidade de discord&acirc;ncias fixas partindo de
+condi&ccedil;&atilde;o inicial consistindo de densidade nula de
+discord&acirc;nicas m&oacute;veis em todo o dom&iacute;nio e nula de
+discord&acirc;ncias fixas em todo o dom&iacute;nio com
+exce&ccedil;&atilde;o de uma faixa central, onde tem-se uma
+distribui&ccedil;&atilde;o aleat&oacute;ria. 
 
-  <img src={{ media_url('images/research/dislocation/discordancias1.png') }} 
-  height="650px" align="middle">
+<img src={{ media_url('images/research/dislocation/discordancias1.png') }} 
+height="650px" align="middle">
 
-  <p> 2. Configura&ccedil;&atilde;o com difus&atilde;o n&atilde;o linear
-  da distribui&ccedil;&atilde;o de discord&acirc;ncias m&oacute;veis. A
-  figura mostra a evolu&ccedil;&atilde;o da distribui&ccedil;&atilde;o
-  de densidade de discord&acirc;ncias fixas partindo de
-  condi&ccedil;&atilde;o inicial consistindo da distribuicao homogenea
-  de equiibrio de discord&acirc;nicas acrescida de uma distribuicao
-  aleatoria. </p>
+* Configura&ccedil;&atilde;o com difus&atilde;o n&atilde;o linear da
+distribui&ccedil;&atilde;o de discord&acirc;ncias m&oacute;veis. A
+figura mostra a evolu&ccedil;&atilde;o da distribui&ccedil;&atilde;o de
+densidade de discord&acirc;ncias fixas partindo de
+condi&ccedil;&atilde;o inicial consistindo da distribuicao homogenea de
+equiibrio de discord&acirc;nicas acrescida de uma distribuicao
+aleatoria. 
 
-  <img src={{ media_url('images/research/dislocation/discordancias2.png') }} 
-  height="650px" align="middle">
+<img src={{ media_url('images/research/dislocation/discordancias2.png') }} 
+height="650px" align="middle">
 
-  <p> Em ambas as simula&ccedil;&otilde;es observa-se a
-  reprodu&ccedil;&atilde;o de fen&ocirc;menos observados
-  experimentalmente, como aumento do comprimento de onda fundamental,
-  aumento da altura e redu&ccedil;&atilde;o da espessura das paredes de
-  discord&acirc;ncias com o n&iacute;vel de for&ccedil;agem. </p>
+Em ambas as simula&ccedil;&otilde;es observa-se a
+reprodu&ccedil;&atilde;o de fen&ocirc;menos observados
+experimentalmente, como aumento do comprimento de onda fundamental,
+aumento da altura e redu&ccedil;&atilde;o da espessura das paredes de
+discord&acirc;ncias com o n&iacute;vel de for&ccedil;agem. 
 
- </div>
-</body>

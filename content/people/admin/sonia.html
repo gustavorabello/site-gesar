@@ -1,41 +1,37 @@
 ---
-extends: base_en.j2
-default_block: main
+extends: post_en.j2
+default_block: people
 description: GESAR Home page 
 title: People at GESAR
 name: Sonia Nina
 level: admin
-grade: Mrs.
+grade: Sra.
 lab: admin
 idt: sonia
 ---
 
-<head>
-  <link rel="stylesheet" href="{{ media_url('css/pessoas.css') }}">
- </head>
+<div id="twoColumns">
+ <div class="left">
+  <img src={{ media_url('images/people/sonia.jpg') }}>
+ </div>
 
- <body>
-  <div id="twoColumns">
-   <div class="left">
-	<img src={{ media_url('images/people/sonia.jpg') }}>
-   </div>
+ <div class="right">
+  <h1> Sonia Nina </h1>
+  <h2> Suporte Administrativo </h2>
+  <p>&nbsp;</p>
+  <p> <b> Address: </b> 
+      Rua Fonseca Telles, 121 <br>
+      pr&eacute;dio anexo - S&atilde;o Crist&oacute;v&atilde;o <br> 
+      20940-903 Rio de Janeiro RJ <br>
+      Brazil </p>
+  <p>&nbsp;</p>
+  <p> <b> Phone: </b> +55 (21) 2332-4733 </p>
+  <p> <b> Fax: </b> +55 (21) 2332-4733 </p>
+  <p> <b> E-mail: </b> <a href="mailto:gesar@uerj.br" target="_top">
+   gesar@guerj.br </a>
+  <p> <b> E-mail: </b> <a href="mailto:zinonina@gmail.com" target="_top">
+   zinonina@gmail.com </a>
+ </div>
+</div>
 
-   <div class="right">
-	<h1> Sonia Nina </h1>
-	<h2> Adminstrative Support </h2>
-    <p>&nbsp;</p>
-	<p> <b> Address: </b> 
-	    Rua Fonseca Telles, 121 <br>
-	    pr&eacute;dio anexo - S&atilde;o Crist&oacute;v&atilde;o <br> 
-	    20940-903 Rio de Janeiro RJ <br>
-	    Brazil </p>
-    <p>&nbsp;</p>
-	<p> <b> Phone: </b> +55 (21) 2332-4733 </p>
-	<p> <b> Fax: </b> +55 (21) 2332-4733 </p>
-	<p> <b> E-mail: </b> <a href="mailto:zinonina@gmail.com" target="_top">
-	 zinonina@gmail.com </a>
-   </div>
-  </div>
-
- </body>
 

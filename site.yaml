@@ -75,13 +75,3 @@ sorter:
         filters:
             source.kind: html
             meta.listable: true
-tagger:
-    sorter: time
-    archives:
-        pesquisa:
-            source: pesquisa 
-            target: pesquisa/tags
-            template: tagged_posts.j2
-            archive_extension: html
-            meta:
-                listable: false

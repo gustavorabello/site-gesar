@@ -246,3 +246,10 @@
  margin-right:auto;
 }
 
+#simple li
+{
+ font-size:14px;
+ text-decoration:none;
+ color:black;
+ margin-left:35px;
+}

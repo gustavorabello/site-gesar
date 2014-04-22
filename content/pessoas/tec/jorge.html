@@ -1,6 +1,6 @@
 ---
-extends: base.j2
-default_block: main
+extends: post.j2
+default_block: people
 description: GESAR Home page 
 title: Pessoas no GESAR
 name: Jorge do Gesar
@@ -10,11 +10,6 @@ lab: tec
 idt: jorge
 ---
 
-<head>
-  <link rel="stylesheet" href="{{ media_url('css/pessoas.css') }}">
- </head>
-
- <body>
   <div id="twoColumns">
    <div class="left">
 	<img src={{ media_url('images/people/jorge.jpg') }}>
@@ -24,9 +19,9 @@ idt: jorge
 	<h1> Jorge Martins </h1>
 	<h2> Suporte Tecnico </h2>
     <p>&nbsp;</p>
-	<p> <b> Endere&ccedilo: </b> 
+	<p> <b> Endere&ccedil;o: </b> 
 	    Rua Fonseca Telles, 121 <br>
-	    pr&eacutedio anexo - S&atildeo Crist&oacutev&atildeo <br> 
+	    pr&eacute;dio anexo - S&atilde;o Crist&oacute;v&atilde;o <br> 
 	    20940-903 Rio de Janeiro RJ <br>
 	    Brasil </p>
     <p>&nbsp;</p>
@@ -36,6 +31,4 @@ idt: jorge
 	 jorgegesar@gmail.com </a>
    </div>
   </div>
-
- </body>
 

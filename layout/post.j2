@@ -1,0 +1,32 @@
+{% extends "base.j2" %}
+
+{% block main -%}
+
+{% mark single -%}
+{% block single -%}{%- endblock %}
+{%- endmark %}
+
+
+{% filter markdown|typogrify -%}
+{% mark text -%}
+<head>
+ <link rel="stylesheet" href="{{ media_url('css/pesquisa.css') }}">
+ </head>
+ <div id="simple">
+{% block text -%}
+{%- endblock %}
+ </div>
+{%- endmark %}
+{%- endfilter %}
+
+{% filter markdown|typogrify -%}
+{% mark people -%}
+<head>
+ <link rel="stylesheet" href="{{ media_url('css/pessoas.css') }}">
+ </head>
+{% block people -%}
+{%- endblock %}
+{%- endmark %}
+{%- endfilter %}
+
+{%- endblock %}

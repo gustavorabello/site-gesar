@@ -1,6 +1,6 @@
 ---
-extends: base.j2
-default_block: main
+extends: post.j2
+default_block: people
 description: GESAR Home page 
 title: Pessoas no GESAR
 name: Gustavo Rabello dos Anjos
@@ -10,11 +10,6 @@ lab: len
 idt: rabello 
 ---
 
-<head>
-  <link rel="stylesheet" href="{{ media_url('css/pessoas.css') }}">
- </head>
-
- <body>
   <div id="twoColumns">
    <div class="left">
    <img src={{ media_url('images/people/rabello.jpg') }}> 
@@ -26,9 +21,9 @@ idt: rabello
 	<p> <a href="http://lattes.cnpq.br/2430893976345647"> link para CV
 	 Lattes </a> </p>
     <p>&nbsp;</p>
-	<p> <b> Endereco: </b> 
+	<p> <b> Endere&ccedil;o: </b> 
 	    Rua Fonseca Telles, 121 <br>
-	    predio anexo - Sao Cristovao <br> 
+	    pr&eacute;dio anexo - S&atilde;o Crist&oacute;v&atilde;o <br> 
 	    20940-903 Rio de Janeiro RJ <br>
 	    Brasil </p>
     <p>&nbsp;</p>
@@ -42,37 +37,39 @@ idt: rabello
   </div>
 
   <div id="singleColumn">
-   <h1> QUALIFICACAO PROFISSIONAL </h1>
+   <h1> QUALIFICA&Ccedil;&Atilde;O PROFISSIONAL </h1>
    <p>&nbsp;</p>
-    <li> Pos-Doutorado em Eng. Mecanica (atual), UERJ, Brasil </li>
-    <li> Pos-Doutorado em Eng. Mecanica, 2013, MIT, Estados Unidos </li>
-    <li> Doutorado em Eng. Mecanica, 2012, EPFL, Suica </li>
+    <li> P&oacute;s-Doutorado em Eng. Mec&acirc;nica (atual), UERJ, Brasil </li>
+    <li> P&oacute;s-Doutorado em Eng. Mec&acirc;nica, 2013, MIT, Estados Unidos </li>
+    <li> Doutorado em Eng. Mec&acirc;nica, 2012, EPFL, Suica </li>
     <li> Mestrado em Eng. Metalurgica e de Materiais, 2007, UFRJ, Brasil </li>
-	<li> Graduacao em Eng. Mecanica, 2005, UERJ, Brasil </li>
+	<li> Gradua&ccedil;&atilde;o em Eng. Mec&acirc;nica, 2005, UERJ, Brasil </li>
   </div>
 
   <div id="singleColumn">
    <h1> INTERESSES ACADEMICOS </h1>
    <p>&nbsp;</p>
-    <li> Escoamentos Multifasicos </li>
-    <li> Transferencia de Calor e Massa </li>
-    <li> Dinamica dos Fluidos Computacional </li>
-    <li> Metodo dos Elementos Finitos </li>
-    <li> Linguagens de Programacao: C/C++, Python, Matlab, Fortran </li>
+    <li> Escoamentos Multif&aacute;sicos </li>
+    <li> Transf&ecirc;rencia de Calor e Massa </li>
+    <li> Din&acirc;mica dos Fluidos Computacional </li>
+    <li> M&eacute;todo dos Elementos Finitos </li>
+    <li> Linguagens de Programa&ccedil;&atilde;o: C/C++, Python, Matlab, Fortran </li>
   </div>
 
   <div id="singleColumn">
    <h1> ATIVIDADES DE PESQUISA E PROJETOS </h1>
    <p>&nbsp;</p>
-    <li> Escoamentos Multifasicos </li>
-    <li> Transferencia de Calor e Massa </li>
-    <li> Equacao de onda (Maxwell) </li>
-    <li> Sistema numerico </li>
+    <li> Escoamentos Multif&aacute;sicos </li>
+    <li> Transfer&ecirc;ncia de Calor e Massa </li>
+    <li> Equa&ccedil;&atilde;o de onda (Maxwell) </li>
+    <li> Sistema num&eacute;rico </li>
   </div>
 
   <div id="singleColumn">
-   <h1> PUBLICACOES RECENTES </h1>
+   <h1> PUBLICA&Ccedil;&Otilde;ES RECENTES </h1>
    <p>&nbsp;</p>
+	<li> 3D Moving Mesh Finite Element Method for Two-Phase Flows,
+	Journal of Computational Physics, 2014 </li>
 	<li> 3D ALE Finite Element Method for Two-Phase Flows with Phase
 	Change, Heat Transfer Engineering, 2013 </li>
 	<li> Estabilidade Hidrodinamica em Celulas Eletroquimicas, Modelagem
@@ -81,6 +78,4 @@ idt: rabello
 	flows, Journal of the Brazilian Society of Mechanical Sciences and
 	Engineering (Impresso), 2014 </li>
   </div>
-
- </body>
 
