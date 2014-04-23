@@ -10,7 +10,7 @@
 
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "professor" %}
-<h1> PROFESSORS </h1>
+<h1> Professors </h1>
 {% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "professor" -%}
@@ -20,7 +20,7 @@
 
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "research" %}
-<h1> RESEARCHERS </h1>
+<h1> Researchers </h1>
 {% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "research" -%}
@@ -30,7 +30,7 @@
 
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "phd" %}
-<h1> DOCTORAL STUDENTS </h1>
+<h1> Doctoral students </h1>
 {% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "phd" -%}
@@ -40,7 +40,7 @@
 
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "msc" %}
-<h1> MASTERS STUDENTS </h1>
+<h1> Masters students </h1>
 {% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "msc" -%}
@@ -50,7 +50,7 @@
 
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "grad" %}
-<h1> SCIENTIFIC INICIATION </h1>
+<h1> Scientific iniciation </h1>
 {% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "grad" -%}
@@ -60,7 +60,7 @@
 
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "admin" %}
-<h1> ADMINSTRATIVE SUPPORT </h1>
+<h1> Adminstrative support </h1>
 {% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "admin" -%}
@@ -70,7 +70,7 @@
 
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "tec" %}
-<h1> TECHNICAL SUPPORT </h1>
+<h1> Technical support </h1>
 {% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "tec" -%}

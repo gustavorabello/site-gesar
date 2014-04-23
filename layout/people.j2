@@ -10,7 +10,7 @@
 
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "professor" %}
-<h1> PROFESSORES </h1>
+<h1> Professores </h1>
 {% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "professor" -%}
@@ -20,7 +20,7 @@
 
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "research" %}
-<h1> PESQUISADORES </h1>
+<h1> Pesquisadores </h1>
 {% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "research" -%}
@@ -30,7 +30,7 @@
 
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "phd" %}
-<h1> ALUNOS DE DOUTORADO </h1>
+<h1> Alunos de doutorado </h1>
 {% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "phd" -%}
@@ -40,7 +40,7 @@
 
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "msc" %}
-<h1> ALUNOS DE MESTRADO </h1>
+<h1> Alunos de mestrado </h1>
 {% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "msc" -%}
@@ -50,7 +50,7 @@
 
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "grad" %}
-<h1> INICIA&Ccedil;&Atilde;O CIENT&Iacute;FICA </h1>
+<h1> Inicia&ccedil;&atilde;o cient&iacute;fica </h1>
 {% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "grad" -%}
@@ -60,7 +60,7 @@
 
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "admin" %}
-<h1> SUPORTE ADMINSTRATIVO </h1>
+<h1> Suporte adminstrativo </h1>
 {% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "admin" -%}
@@ -70,7 +70,7 @@
 
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "tec" %}
-<h1> SUPORTE T&Eacute;CNICO </h1>
+<h1> Suporte t&eacute;cnico </h1>
 {% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "tec" -%}
