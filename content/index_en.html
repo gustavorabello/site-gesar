@@ -10,6 +10,28 @@ description: GESAR Home page
 </head>
 
 <body>
+
+  <div id="header">
+    <h1> Welcome to GESAR! </h1>
+	<p>&nbsp;</p>
+	<p> O GESAR (Grupo de Estudos e Simula&ccedil;&otilde;es Ambientais
+	em Reservat&oacute;rios) foi criado em 2005 a partir de um projeto
+	de PeD conduzido por FURNAS CENTRAIS EL&Eacute;TRICAS S.A. e
+	encomendado &agrave; UERJ (Universidade do Estado do Rio de
+	Janeiro). O Grupo j&aacute; realizou XXXX projetos de pesquisa
+	aplicada nas &aacute;reas de simula&ccedil;&atilde;o
+	num&eacute;rica, limnologia e desenvolvimento bancos de dados, em
+	valor totaliza aproximadamente R$ YYYYYY,YY Reais. O GESAR &eacute;
+	hoje uma UDT - Unidade de Desenvolvimento Tecnol&oacute;gico da
+	UERJ. O Programa de P&oacute;s-gradua&ccedil;&atilde;o em Engenharia
+	Mec&acirc;nica PPG-EM/UERJ originou-se e apoia-se no GESAR. Tem
+	atualmente XXX alunos inscritos no programa de mestrado e tr&ecirc;s
+	no de doutoramento. <a href="{{
+	 media_url('html/news/mar/mestradoSilveira.html') }}"> [more info]
+	</a> </p>
+   </div>
+
+
   <div id="block">
    <div class="col1">
 	<h1> Latest news: </h1>
@@ -70,16 +92,16 @@ description: GESAR Home page
 
    <div class="col2">
 	<iframe width="320" height="240"
-	 src="//www.youtube.com/embed/CBv8NA5pEQk?rel=0&autoplay=1&loop=1" frameborder="0"
-	 allowfullscreen></iframe>
+	 src="//www.youtube.com/embed/enG5UeMakyw?rel=0&autoplay=1&loop=1"
+	 frameborder="0" allowfullscreen></iframe>
 	<p>&nbsp;</p>
 	<iframe width="320" height="240"
-	 src="//www.youtube.com/embed/BVYVxs0GS90?rel=0&autoplay=1&loop=1" frameborder="0"
-	 allowfullscreen></iframe>
+	 src="//www.youtube.com/embed/CBv8NA5pEQk?rel=0&autoplay=1&loop=1"
+	 frameborder="0" allowfullscreen></iframe>
 	<p>&nbsp;</p>
 	<iframe width="320" height="150"
-	 src="//www.youtube.com/embed/avSRbkgDhmI?rel=0&autoplay=1&loop=1" frameborder="0"
-	 allowfullscreen></iframe>
+	 src="//www.youtube.com/embed/avSRbkgDhmI?rel=0&autoplay=1&loop=1"
+	 frameborder="0" allowfullscreen></iframe>
 
    </div>
 
@@ -98,41 +120,48 @@ description: GESAR Home page
    </div>
   </div>
 
- <div id="singleColumn">
-  <p> Funding agencies </p>
   <p>&nbsp;</p>
-  <a href="http://www.cnpq.br" target="_blank"> 
-   <img src={{ media_url('images/logos/cnpq.png') }} > </a>
-  <a href="http://www.faperj.br" target="_blank"> 
-   <img src={{ media_url('images/logos/faperj.png') }} > </a>
-  <a href="http://www.finep.gov.br" target="_blank"> 
-   <img src={{ media_url('images/logos/finep.png') }} > </a>
-  <a href="http://www.capes.gov.br" target="_blank"> 
-   <img src={{ media_url('images/logos/capes.png') }} > </a>
 
-  <p> Academic units </p>
-  <p>&nbsp;</p>
-  <a href="http://www.uerj.br" target="_blank"> 
-   <img src={{ media_url('images/logos/uerj.png') }} > </a>
-  <a href="http://www.eng.uerj.br" target="_blank"> 
-   <img src={{ media_url('images/logos/fen.png') }} > </a>
-  <a href="http://www.ppg-em.eng.uerj.br" target="_blank"> 
-   <img src={{ media_url('images/logos/ppgem.png') }} > </a>
+  <div id="footer">
+	<div class="col1">
+	 <h1> Academic units </h1>
+	 <p>&nbsp;</p>
+	 <a href="http://www.uerj.br" target="_blank"> 
+	  <img src={{ media_url('images/logos/uerj.png') }} > </a>
+	 <a href="http://www.eng.uerj.br" target="_blank"> 
+	  <img src={{ media_url('images/logos/fen.png') }} > </a>
+	 <a href="http://www.ppg-em.eng.uerj.br" target="_blank"> 
+	  <img src={{ media_url('images/logos/ppgem.png') }} > </a>
+	</div>
 
-  <p> Other links </p>
-  <p>&nbsp;</p>
-  <a href="http://www.periodicos.capes.gov.br" target="_blank"> 
-   <img src={{ media_url('images/logos/periodicos.png') }} border="1" height="50px"> </a>
-  <a href="http://www.scielo.br" target="_blank"> 
-   <img src={{ media_url('images/logos/scielo.png') }} > </a>
-  <a href="http://www.scopus.com" target="_blank"> 
-   <img src={{ media_url('images/logos/scopus.png') }} > </a>
-  <a href="http://www.lattes.cnpq.br" target="_blank"> 
-   <img src={{ media_url('images/logos/lattes.png') }} > </a>
-  <br>
-  <a href="http://www.webofknowledge.com" target="_blank"> 
-   <img src={{ media_url('images/logos/webofscience.png') }} > </a>
- </div>
+	<div class="col2">
+	 <h1> Citation machines / Lattes </h1>
+	 <p>&nbsp;</p>
+	 <a href="http://www.periodicos.capes.gov.br" target="_blank"> 
+	  <img src={{ media_url('images/logos/periodicos.png') }} border="1" height="50px"> </a>
+	 <a href="http://www.scielo.br" target="_blank"> 
+	  <img src={{ media_url('images/logos/scielo.png') }} > </a>
+	 <a href="http://www.scopus.com" target="_blank"> 
+	  <img src={{ media_url('images/logos/scopus.png') }} > </a>
+	 <a href="http://www.webofknowledge.com" target="_blank"> 
+	  <img src={{ media_url('images/logos/wos.png') }} > </a>
+	 <a href="http://www.lattes.cnpq.br" target="_blank"> 
+	  <img src={{ media_url('images/logos/lattes.png') }} > </a>
+	</div>
+
+	<div class="col3">
+	 <h1> Funding agencies </h1>
+	 <p>&nbsp;</p>
+	 <a href="http://www.cnpq.br" target="_blank"> 
+	  <img src={{ media_url('images/logos/cnpq.png') }} > </a>
+	 <a href="http://www.faperj.br" target="_blank"> 
+	  <img src={{ media_url('images/logos/faperj.png') }} > </a>
+	 <a href="http://www.finep.gov.br" target="_blank"> 
+	  <img src={{ media_url('images/logos/finep.png') }} > </a>
+	 <a href="http://www.capes.gov.br" target="_blank"> 
+	  <img src={{ media_url('images/logos/capes.png') }} > </a>
+	</div>
+   </div>
 
 </body>
 
