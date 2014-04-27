@@ -44,7 +44,7 @@
  text-decoration:none;
  color: black;
  line-height: 26px;
- border-bottom: 1px solid #ccc;
+ border-bottom: 1px solid blue;
 }
 
 #block h2
@@ -165,7 +165,7 @@
  text-align:left;
  color:black;
  line-height: 26px;
- border-bottom: 1px solid #ccc;
+ border-bottom: 1px solid blue;
 }
 
 #header img
@@ -221,7 +221,7 @@
  text-decoration:none;
  color: black;
  line-height: 26px;
- border-bottom: 1px solid #ccc;
+ border-bottom: 1px solid blue;
 }
 
 #footer .col1
