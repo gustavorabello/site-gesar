@@ -63,20 +63,6 @@
  line-height:100%;
 }
 
-#block .left
-{ 
- float:left;
- width:70%;
- height:auto;
-}
-
-#block .right
-{ 
- float:right;
- width:25%;
- height:auto;
-}
-
 #block .col1
 { 
  float:left;
@@ -88,7 +74,7 @@
 { 
  padding-left:40px;
  float:left;
- width:45%;
+ width:41%;
  height:auto;
 }
 
