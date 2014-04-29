@@ -11,6 +11,7 @@
  text-align:center; 
  font-size:13px; 
  letter-spacing:-1px;
+ height:30px;
 }
 
 #singleColumn a
@@ -63,6 +64,28 @@
  height:30px;
  text-align:center;
  color:black;
+}
+
+#singleColumn .col1
+{ 
+ float:left;
+ width:32%;
+ height:auto;
+}
+
+#singleColumn .col2
+{ 
+ float:left;
+ margin-left:15px;
+ width:32%;
+ height:auto;
+}
+
+#singleColumn .col3
+{ 
+ float:right;
+ width:32%;
+ height:auto;
 }
 
 #twoColumns 
@@ -130,7 +153,8 @@
 
 #block
 { 
- width:950px;
+ width:230px;
+ height:40px;
 }
 
 #block img
@@ -173,14 +197,14 @@
 
 #block .left
 { 
- width:10%;
+ width:15%;
  float:left;
  height:auto 
 }
 
 #block .right
 { 
- width:90%;
+ width:80%;
  float:right;
  height:auto 
 }

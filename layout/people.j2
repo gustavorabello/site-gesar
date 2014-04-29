@@ -7,80 +7,127 @@
 </head>
 
 <div id="singleColumn">
-
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "professor" %}
 <h1> Professores </h1>
 {% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
+{% set count = 1 %}
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "professor" -%}
- {{ render_person(res) }}
+  <div class=col{{count}}>
+    {{ render_person(res) }}
+  </div>
+  {% set count = count + 1 %}
+  {% if count > 3 -%} {% set count = 1 -%}{% endif %}
 {% endfor %}
+</div>
 <p>&nbsp;</p>
 
+<div id="singleColumn">
+{% for res in resource.node.walk_resources_sorted_by_time() %}
+{%- if res.meta.level == "admin" %}
+<h1> Suporte administrativo </h1>
+{% break%}{% endif %}{% endfor %}
+<p>&nbsp;</p>
+{% set count = 1 %}
+{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "admin" -%}
+  <div class=col{{count}}>
+    {{ render_person(res) }}
+  </div>
+  {% set count = count + 1 %}
+  {% if count > 3 -%} {% set count = 1 -%}{% endif %}
+{% endfor %}
+</div>
+<p>&nbsp;</p>
+
+
+<div id="singleColumn">
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "research" %}
 <h1> Pesquisadores </h1>
 {% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
+{% set count = 1 %}
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "research" -%}
- {{ render_person(res) }}
+  <div class=col{{count}}>
+    {{ render_person(res) }}
+  </div>
+  {% set count = count + 1 %}
+  {% if count > 3 -%} {% set count = 1 -%}{% endif %}
 {% endfor %}
+</div>
 <p>&nbsp;</p>
 
+
+<div id="singleColumn">
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "phd" %}
 <h1> Alunos de doutorado </h1>
 {% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
+{% set count = 1 %}
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "phd" -%}
- {{ render_person(res) }}
+  <div class=col{{count}}>
+    {{ render_person(res) }}
+  </div>
+  {% set count = count + 1 %}
+  {% if count > 3 -%} {% set count = 1 -%}{% endif %}
 {% endfor %}
+</div>
 <p>&nbsp;</p>
 
+
+<div id="singleColumn">
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "msc" %}
 <h1> Alunos de mestrado </h1>
 {% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
+{% set count = 1 %}
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "msc" -%}
- {{ render_person(res) }}
+  <div class=col{{count}}>
+    {{ render_person(res) }}
+  </div>
+  {% set count = count + 1 %}
+  {% if count > 3 -%} {% set count = 1 -%}{% endif %}
 {% endfor %}
+</div>
 <p>&nbsp;</p>
 
+
+<div id="singleColumn">
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "grad" %}
 <h1> Inicia&ccedil;&atilde;o cient&iacute;fica </h1>
 {% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
+{% set count = 1 %}
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "grad" -%}
- {{ render_person(res) }}
+  <div class=col{{count}}>
+    {{ render_person(res) }}
+  </div>
+  {% set count = count + 1 %}
+  {% if count > 3 -%} {% set count = 1 -%}{% endif %}
 {% endfor %}
+</div>
 <p>&nbsp;</p>
 
-{% for res in resource.node.walk_resources_sorted_by_time() %}
-{%- if res.meta.level == "admin" %}
-<h1> Suporte adminstrativo </h1>
-{% break%}{% endif %}{% endfor %}
-<p>&nbsp;</p>
-{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "admin" -%}
- {{ render_person(res) }}
-{% endfor %}
-<p>&nbsp;</p>
-
+<div id="singleColumn">
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "tec" %}
 <h1> Suporte t&eacute;cnico </h1>
 {% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
+{% set count = 1 %}
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "tec" -%}
- {{ render_person(res) }}
+  <div class=col{{count}}>
+    {{ render_person(res) }}
+  </div>
+  {% set count = count + 1 %}
+  {% if count > 3 -%} {% set count = 1 -%}{% endif %}
 {% endfor %}
+</div>
 <p>&nbsp;</p>
 
-</div>
-
 {% endblock %}
-
-
 
