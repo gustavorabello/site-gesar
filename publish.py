@@ -5,7 +5,8 @@
 ## =================================================================== ##
 
 
-import paramiko,os
+import paramiko,os,shutil
+from subprocess import call
 from stat import S_ISDIR
 
 server ='www.unidades.uerj.br'
@@ -46,13 +47,31 @@ def rm(path):
 
   files = sftp.listdir(path=path)
 
+def genSite():
+ # removing local directory paginas
+ directory = './paginas'
+ if os.path.exists(directory):
+  shutil.rmtree(directory)
+
+ # generating webpage into paginas folder
+ call(['hyde','gen'])
+
+
 def upload(source,destination):
  sftp.put(source,destination)
 
 
 if __name__ == "__main__":
  path='/paginas'
+
+ print ""
+ print "---> removing server web site..."
  rm(path)
+ print "---> generation local web site..."
+ genSite()
+ #print "---> uploading web site from local to server..."
  #upload('.','.')
+ print "---> closing sftp connection. Done!"
  sftp.close
+ print ""
 
