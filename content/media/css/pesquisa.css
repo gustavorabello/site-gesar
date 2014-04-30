@@ -253,3 +253,22 @@
  color:black;
  margin-left:35px;
 }
+
+#simple a
+{ 
+ font-family:Arial, Helvetica, sans-serif; 
+ color:black;
+}
+
+#simple strong
+{ 
+ font-family:Arial, Helvetica, sans-serif; 
+ color:black;
+ font-weight:bold;
+}
+
+#simple a:hover
+{ 
+ color:red;
+ border-bottom:1px;
+}
