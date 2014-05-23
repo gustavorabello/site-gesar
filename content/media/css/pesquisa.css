@@ -232,6 +232,16 @@
  color:black;
 }
 
+#simple h2
+{ 
+ font-size:18px;
+ font-weight:bold;
+ width:450px;
+ margin-left:60px;
+ text-align:center;
+ color:blue;
+}
+
 #simple p
 { 
  font-size:14px;
