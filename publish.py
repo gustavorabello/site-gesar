@@ -57,8 +57,18 @@ def genSite():
  call(['hyde','gen'])
 
 
-def upload(source,destination):
- sftp.put(source,destination)
+def upload(localpath,remotepath):
+ #  recursively upload a full directory
+ os.chdir(os.path.split(localpath)[0])
+ parent=os.path.split(localpath)[1]
+ for walker in os.walk(parent):
+  try:
+   sftp.mkdir(os.path.join(remotepath,walker[0]))
+  except:
+   pass
+  for file in walker[2]:
+   print os.path.join(walker[0],file)
+   sftp.put(os.path.join(walker[0],file),os.path.join(remotepath,walker[0],file))
 
 
 if __name__ == "__main__":
@@ -70,7 +80,7 @@ if __name__ == "__main__":
  print "---> generation local web site..."
  genSite()
  #print "---> uploading web site from local to server..."
- #upload('.','.')
+ upload('./paginas','.')
  print "---> closing sftp connection. Done!"
  sftp.close
  print ""
