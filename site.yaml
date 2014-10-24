@@ -47,6 +47,14 @@ context:
                 url: laboratorios
                 url_en: laboratories
             -
+                name: Projetos
+                name_en: Projects
+                description: Projeto
+                css_class: pesquisa
+                type: node
+                url: projetos
+                url_en: projects
+            -
                 name: Pesquisa
                 name_en: Research
                 description: Pesquisa

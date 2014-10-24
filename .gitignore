@@ -3,5 +3,6 @@
 *~
 .DS*
 .hyde*
+*.pyc
 deploy/
 paginas/
