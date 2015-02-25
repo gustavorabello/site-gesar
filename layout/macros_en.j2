@@ -99,6 +99,25 @@
  </div>
 {% endmacro %}
 
+{% macro render_seminar(res, class=None) %}
+ <div id="block">
+  <div class="col1">
+   <a href={{ media_url('/pdf/seminar/') }}{{ res.meta.File }}> 
+   <img src={{ media_url('images/pdf-icon.png') }} ></a>
+  </div>
+  <div class="col2">
+   <a href={{ media_url('/pdf/seminar/') }}{{ res.meta.File }}> 
+   <img src={{ media_url('images/ppt-icon.png') }} ></a>
+  </div>
+  <div class="col3">
+
+    <p> {{ res.meta.FirstAuthor }}, 
+	<b> {{ res.meta.Title }}</b>, 
+    {{ res.meta.Month }}.{{ res.meta.Day }}.{{ res.meta.Year }} </p>
+  </div>
+ </div>
+{% endmacro %}
+
 {% macro render_nav(menu, cls=None) -%}
 {% if menu -%}
 <nav {{'class='~cls if cls }}>

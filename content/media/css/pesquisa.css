@@ -4,14 +4,14 @@
 
 #singleColumn
 { 
- width:780px;
+ width:860px;
  padding-bottom:20px;
- padding-top:20px; 
- padding-right:30px;
  text-align:center; 
  font-size:13px; 
  letter-spacing:-1px;
  height:auto;
+ margin-left:auto;
+ margin-right:auto;
 }
 
 #singleColumn a
@@ -53,7 +53,7 @@
  font-weight:bold;
  text-align:left;
  color:black;
- width:800px;
+ width:860px;
  line-height: 36px;
  margin-bottom:10px;
  border-bottom: 1px solid blue;
@@ -136,7 +136,7 @@
 #block
 { 
  margin-left:30px;
- width:760px;
+ width:800px;
  height:210px;
  /*background:red;*/
 }

@@ -4,12 +4,13 @@
 
 #singleColumn
 { 
- width:600px;
+ width:820px;
  padding-bottom:20px;
  padding-top:20px; 
- padding-left:110px;
- font-size:13px; 
- letter-spacing:-1px;
+ font-size:14px; 
+ text-align:justify;
+ margin-left:auto;
+ margin-right:auto;
 }
 
 #singleColumn a

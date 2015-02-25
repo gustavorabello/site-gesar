@@ -6,6 +6,9 @@
 { 
  height:700px;
  text-align:justify;
+ width:860px;
+ margin-left:auto;
+ margin-right:auto;
 }
 
 #block img
@@ -17,7 +20,7 @@
 
 #block p
 { 
- font-size:16px;
+ font-size:14px;
  text-align:justify;
  padding-top:-10px;
  padding-bottom:0px;
@@ -128,7 +131,7 @@
 
 #header
 { 
- width:810px;
+ width:860px;
  height:100px;
  padding-top:10px;
  padding-bottom:70px;
@@ -226,7 +229,6 @@
 
 #footer .col1
 { 
- padding-left:20px;
  float:left;
  width:18%;
  height:auto;

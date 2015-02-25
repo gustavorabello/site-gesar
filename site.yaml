@@ -1,8 +1,8 @@
 
 
-#mode: development
+mode: development
 
-mode: production
+#mode: production
 media_url: /media # URL where the media files are served from.
 image_url: /media/images # URL for images media files.
 
@@ -46,6 +46,14 @@ context:
                 type: node
                 url: laboratorios
                 url_en: laboratories
+            -
+                name: Semin&aacute;rios
+                name_en: Seminars
+                description: Semin&aacute;rios
+                css_class: seminarios
+                type: node
+                url: seminarios
+                url_en: seminars
             -
                 name: Projetos
                 name_en: Projects
