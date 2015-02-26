@@ -7,17 +7,60 @@
 </head>
 
 <div id="page">
+  <h1> Fen&ocirc;menos de Transporte - FEN03-02040 </h1>
+    <div class="left">
+      <li> ementa </li>
+      <li> conte&uacute;do do curso </li>
+      <li> 1a. aula </li>
+      <li> refer&ecirc;ncias </li>
+    </div>
+    <div class="right">
+      <li> lista de exerc&iacute;cios I </li>
+      <li> lista de exerc&iacute;cios II </li>
+      <li> solu&ccedil;&atilde;o da lista de exerc&iacute;cios I </li>
+      <li> solu&ccedil;&atilde;o da lista de exerc&iacute;cios II </li>
+      <li> notas finas e frequ&ecirc;ncias - turma 5 </li>
+      <li> notas finas e frequ&ecirc;ncias - turma 6 </li>
+    </div>
+</div>
 
-{% set years = range(2015, 2014, -1) -%}
-{% for year in years -%}
-<h1> {{ year }} </h1>
+<p>&nbsp;</p>
 
-{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.Year == year -%}
- {{ render_seminar(res) }}
-{% endfor %}
+<div id="page">
+  <h1> Transfer&ecirc;ncia de Calor I - FEN03-05190 </h1>
+    <div class="left">
+      <li> ementa </li>
+      <li> conte&uacute;do do curso </li>
+      <li> 1a. aula </li>
+      <li> refer&ecirc;ncias </li>
+    </div>
+</div>
 
-{% endfor %}
+<p>&nbsp;</p>
 
+<div id="page">
+  <h1> Escoamentos Multif&aacute;sicos (mestrado/doutorado) - FEN03-711 </h1>
+    <div class="left">
+      <li> ementa </li>
+      <li> conte&uacute;do do curso </li>
+      <li> 1a. aula </li>
+      <li> refer&ecirc;ncias </li>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
+<div id="page">
+  <h1> Semin&aacute;rios - FEN03-705 </h1>
+    {% set years = range(2015, 2014, -1) -%}
+    {% for year in years -%}
+      <h2> {{ year }} </h2>
+
+      {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.Year == year -%}
+        {{ render_seminar(res) }}
+      {% endfor %}
+
+    {% endfor %}
 </div>
 
 {% endblock %}
