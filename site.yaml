@@ -47,9 +47,9 @@ context:
                 url: laboratorios
                 url_en: laboratories
             -
-                name: Semin&aacute;rios
-                name_en: Seminars
-                description: Semin&aacute;rios
+                name: Cursos
+                name_en: Courses
+                description: Cursos e Semin&aacute;rios
                 css_class: seminarios
                 type: node
                 url: seminarios
