@@ -30,7 +30,7 @@
 { 
  font-size:13px;
  text-align:justify;
- text-decoration:underline;
+ text-decoration: none;
  color: #005c1f;
 }
 
@@ -144,7 +144,7 @@
 { 
  font-size:14px;
  text-align:center;
- text-decoration:underline;
+ text-decoration: none;
  color: #005c1f;
 }
 
@@ -205,8 +205,8 @@
 { 
  font-size:13px;
  text-align:center;
- text-decoration:underline;
- color: #005c1f;
+ text-decoration:none;
+ color:#005c1f;
 }
 
 #footer a:hover
