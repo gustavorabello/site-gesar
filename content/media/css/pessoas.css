@@ -21,8 +21,7 @@
 
 #singleColumn a:hover
 { 
- color:red;
- border-bottom:1px;
+ color:#990000;
 }
 
 #singleColumn p 
@@ -48,7 +47,7 @@
  font-weight:bold;
  text-align:left;
  color:black;
- border-bottom: 1px solid blue;
+ border-bottom: 1px solid #990000;
  width:820px;
 }
 
@@ -192,7 +191,7 @@
  font-size:14px;
  text-align:justify;
  margin-top:5px;
- color:red;
+ color:#990000;
 }
 
 #block .left
