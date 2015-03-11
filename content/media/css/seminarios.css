@@ -21,7 +21,7 @@
 
 #page a:hover
 { 
- color:red;
+ color:#990000;
  border-bottom:1px;
 }
 
@@ -38,7 +38,7 @@
  margin-left:10px;
  margin-bottom:10px;
  color:black;
- border-bottom: 1px solid blue;
+ border-bottom: 1px solid #990000;
  width:820px;
 }
 
@@ -50,7 +50,7 @@
  margin-left:40px;
  margin-bottom:10px;
  color:black;
- border-bottom: 1px solid black;
+ border-bottom: 1px solid #990000;
  width:120px;
 }
 

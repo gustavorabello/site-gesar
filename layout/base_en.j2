@@ -33,7 +33,8 @@
   {% block favicons %}
   <!-- Place favicon.ico in the root of your domain and delete these
   references -->
-  <link rel="shortcut icon" href="{{ media_url('/images/logos/favicon.ico') }}">
+  <link rel="shortcut icon" href="{{
+  media_url('/images/logos/favicon-new.ico') }}">
   {% endblock favicons %}
 
   {% block css %}
@@ -56,23 +57,23 @@
           <header class="banner clearfix">
           {% block header -%}
 		  <div class="column1">
-		   <img src={{ media_url('images/logos/gesar.png') }}
-		   height="40px" align="left"> <br>
-		   <img src={{ media_url('images/logos/uerj-fen.png') }}
+		   <img src={{ media_url('images/logos/gesar-logo-site-new.png') }}
+		   height="38px" align="left"> <br>
+		   <img src={{ media_url('images/logos/uerj-fen-new.png') }}
 		   height="51px" align="left"> 
 		   <p>&nbsp;</p>
 		   <a href=/index.html> <img src={{
 			media_url('images/brazil.png') }} border="1" align="left"> </a>
 		   <a href=/index_en.html> <img src={{
-			media_url('images/usa.png') }} border="1" align="left"> </a>
+			media_url('images/uk.png') }} border="1" align="left"> </a>
 			  </div>
 		  <div class="column2">
-            <h1>Gesar</h1>
+            <h1>Gesar Labs </h1>
 			<h2> UDT - Technological Development Unit </h2>
             <h3> UERJ - State University of Rio de Janeiro </h3>
 			  </div>
 		  <div class="column3">
-		    <b> Gesar </b> <br>
+		    <b> Location </b> <br>
 			Rua Fonseca Teles, 121 <br>
 			S&atilde;o Crist&oacute;v&atilde;o, Rio de Janeiro <br>
 			20940-903 RJ - Brazil <br>
@@ -98,11 +99,8 @@
     {% endblock container %}
   </div> <!--! end of #container -->
   <footer>
-  <p> <a href="https://goo.gl/maps/TAMIu" target="_blank"> Gesar </a> </p>
-  <p> <a href="https://goo.gl/maps/TAMIu" target="_blank"> Rua Fonseca
-   Teles, 121 - Pr&eacute;dio Anexo, S&atilde;o Crist&oacute;v&atilde;o  </a></p>
-  <p> <a href="https://goo.gl/maps/TAMIu" target="_blank"> 20940-903 Rio
-   de Janeiro, RJ - Brasil </a></p>
+  <p> <a href="https://goo.gl/maps/TAMIu" target="_blank"> Gesar - Rua Fonseca
+   Teles, 121, S&atilde;o Crist&oacute;v&atilde;o, 20940-903, Rio de Janeiro, RJ - Brazil </a></p>
 	<p>&nbsp;</p>
   </footer>
   {% endblock content%}
