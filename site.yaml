@@ -50,10 +50,10 @@ context:
                 name: Cursos
                 name_en: Courses
                 description: Cursos e Semin&aacute;rios
-                css_class: seminarios
+                css_class: cursos
                 type: node
-                url: seminarios
-                url_en: seminars
+                url: cursos
+                url_en: courses 
             -
                 name: Projetos
                 name_en: Projects
