@@ -298,7 +298,9 @@ section.content{
 /* listing */
 
 .listing{
-    margin-top: 124px;
+    margin-top: 24px;
+    margin-left: 26px;
+	height:auto;
 }
 
 .listing img{
@@ -310,10 +312,10 @@ section.content{
     background-color: #ededed;
     list-style-type: none;
     float: left;
-    width: 272px;
-    margin-right: 24px;
+    width: 222px;
+    margin-right: 20px;
     margin-bottom: 24px;
-    padding: 12px;
+    padding: 20px;
     -moz-box-shadow: 0px 4px 12px #ccc; /* FF3.5+ */
     -webkit-box-shadow: 0px 4px 12px #ccc; /* Saf3.0+, Chrome */
           box-shadow: 0px 4px 12px #ccc; /* Opera 10.5, IE 9.0 */
@@ -322,11 +324,22 @@ section.content{
 
 }
 
-.listing li:nth-child(2){
-    margin-right: 0;
+.listing li:nth-child(4){
+    clear: left;
 }
 
-.listing li:nth-child(3){
+.listing li:nth-child(7){
+    clear: left;
+}
+
+.listing li:nth-child(10){
+    clear: left;
+}
+
+.listing li:nth-child(13){
+    clear: left;
+}
+.listing li:nth-child(10){
     clear: left;
 }
 
@@ -334,14 +347,19 @@ section.content{
     font-size: 10px;
     line-height: 12px;
     margin-bottom: 12px;
+    text-align:justify;
 }
 
 
-.listing h3{
-    border-bottom: 1px solid #ccc;
+.listing h1{
+    border-bottom: 1px solid #990000;
     font-size: 12px;
     line-height: 18px;
-    margin-bottom: 6px;
+    margin-bottom: 20px;
+}
+
+.listing img{
+ 	margin-left:10px;
 }
 
 .listing time{
