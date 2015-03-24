@@ -204,14 +204,13 @@
 #footer a
 { 
  font-size:13px;
- text-align:center;
  text-decoration:none;
  color:#990000;
 }
 
 #footer a:hover
 { 
- color:black;
+ color:#990000;
 }
 
 #footer h1
@@ -227,39 +226,43 @@
 #footer .col1
 { 
  float:left;
- width:27%;
+ width:25%;
  height:auto;
 }
 
-#footer .col1 .row
+#footer .img-wrapper
 {
- width:100%;
  display:flex;
- flex-direction:row;
+ align-items:center;
+ -webkit-box-pack: justify;
+ -moz-box-pack: justify;
+ -ms-flex-pack: justify;
+ -webkit-justify-content:space-around;
+ flex-flow: row wrap
 }
-#footer .col1 .img-wrapper
+
+#footer .row
 {
- flex:1;
+ display:flex;
+ align-items:center;
+ -webkit-box-pack: justify;
+ -moz-box-pack: justify;
+ -ms-flex-pack: justify;
+ -webkit-justify-content:space-around;
+ flex-flow: row wrap
 }
 
 #footer .col2
 { 
  padding-left:40px;
  float:left;
- width:39%;
+ width:41%;
  height:auto;
- /*padding-left:30px;
- float:left;
- width:43%;
- height:auto;*/
 }
 
 #footer .col3
 { 
  float:right;
- width:28%;
+ width:25%;
  height:auto;
- /*float:right;
- width:30%;
- height:auto;*/
 }
