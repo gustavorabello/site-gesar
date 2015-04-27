@@ -1,0 +1,11 @@
+/* SOBRE.CSS - EXTENSION OF SITE LAYOUT */
+/*@import url("site.css");*/
+
+p {
+text-align: center;
+}
+
+#img-frame img {
+ width=280px;
+ height=240px; 
+}
