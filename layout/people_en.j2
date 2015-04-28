@@ -23,15 +23,16 @@
 </div>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 
 <div id="singleColumn">
 {% for res in resource.node.walk_resources_sorted_by_time() %}
-{%- if res.meta.level == "admin" %}
-<h1> Administrative support </h1>
+{%- if (res.meta.level == "admin" or res.meta.level == "tec") %}
+<h1> Techincal-administrative support </h1>
 {% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
 {% set count = 1 %}
-{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "admin" -%}
+{% for res in resource.node.walk_resources_sorted_by_time() if (res.meta.level == "admin" or res.meta.level == "tec") -%}
   <div class=col{{count}}>
     {{ render_person(res) }}
   </div>
@@ -59,6 +60,7 @@
 </div>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 
 
 <div id="singleColumn">
@@ -76,6 +78,7 @@
   {% if count > 3 -%} {% set count = 1 -%}{% endif %}
 {% endfor %}
 </div>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
@@ -125,24 +128,6 @@
 <p>&nbsp;</p>
 {% set count = 1 %}
 {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "trainee" -%}
-  <div class=col{{count}}>
-    {{ render_person(res) }}
-  </div>
-  {% set count = count + 1 %}
-  {% if count > 3 -%} {% set count = 1 -%}{% endif %}
-{% endfor %}
-</div>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-
-<div id="singleColumn">
-{% for res in resource.node.walk_resources_sorted_by_time() %}
-{%- if res.meta.level == "tec" %}
-<h1> Technical support </h1>
-{% break%}{% endif %}{% endfor %}
-<p>&nbsp;</p>
-{% set count = 1 %}
-{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "tec" -%}
   <div class=col{{count}}>
     {{ render_person(res) }}
   </div>
