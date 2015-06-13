@@ -136,6 +136,24 @@
 {% endfor %}
 </div>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<div id="singleColumn">
+{% for res in resource.node.walk_resources_sorted_by_time() %}
+{%- if res.meta.level == "alumni" %}
+<h1> Alumni </h1>
+{% break%}{% endif %}{% endfor %}
+<p>&nbsp;</p>
+{% set count = 1 %}
+{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "alumni" -%}
+  <div class=col{{count}}>
+    {{ render_person(res) }}
+  </div>
+  {% set count = count + 1 %}
+  {% if count > 3 -%} {% set count = 1 -%}{% endif %}
+{% endfor %}
+</div>
+<p>&nbsp;</p>
 
 {% endblock %}
 
