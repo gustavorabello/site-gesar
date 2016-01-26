@@ -5,12 +5,12 @@
 #page
 { 
  width:820px;
- margin-top:10px;
- margin-bottom:120px;
+ margin-top:30px;
+ margin-bottom:160px;
  text-align:center; 
  font-size:13px; 
  letter-spacing:-1px;
- height:70px;
+ height:auto;
 }
 
 #page a
@@ -243,3 +243,36 @@
  margin-right:auto;
 }
 
+
+#seminar
+{ 
+ width:820px;
+ text-align:center; 
+ font-size:13px; 
+ letter-spacing:-1px;
+ height:auto;
+}
+
+#seminar h1 
+{ 
+ font-size:20px;
+ font-weight:bold;
+ text-align:justify;
+ margin-left:10px;
+ margin-bottom:10px;
+ color:black;
+ border-bottom: 1px solid #990000;
+ width:820px;
+}
+
+#seminar h2
+{ 
+ font-size:18px;
+ font-weight:bold;
+ text-align:justify;
+ margin-left:40px;
+ margin-bottom:10px;
+ color:black;
+ border-bottom: 1px solid #990000;
+ width:120px;
+}
