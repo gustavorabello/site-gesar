@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="{{ media_url('css/pessoas.css') }}">
 </head>
 
-<div id="singleColumn">
+<div id="singleColumnPlus">
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "professor" %}
 <h1> Professores </h1>
@@ -22,7 +22,7 @@
 {% endfor %}
 </div>
 
-<div id="singleColumn">
+<div id="singleColumnPlus">
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if (res.meta.level == "admin" or res.meta.level == "tec") %}
 <h1> Suporte t&eacute;cnico-administrativo</h1>
@@ -39,7 +39,7 @@
 </div>
 
 
-<div id="singleColumn">
+<div id="singleColumnPlus">
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "research" %}
 <h1> Pesquisadores </h1>
@@ -56,7 +56,7 @@
 </div>
 
 
-<div id="singleColumn">
+<div id="singleColumnPlus">
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "phd" %}
 <h1> Alunos de doutorado </h1>
@@ -73,7 +73,7 @@
 </div>
 
 
-<div id="singleColumn">
+<div id="singleColumnPlus">
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "msc" %}
 <h1> Alunos de mestrado </h1>
@@ -90,7 +90,7 @@
 </div>
 
 
-<div id="singleColumn">
+<div id="singleColumnPlus">
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "grad" %}
 <h1> Inicia&ccedil;&atilde;o cient&iacute;fica </h1>
@@ -106,7 +106,7 @@
 {% endfor %}
 </div>
 
-<div id="singleColumn">
+<div id="singleColumnPlus">
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "trainee" %}
 <h1> Estagi&aacute;rio </h1>
@@ -122,7 +122,7 @@
 {% endfor %}
 </div>
 
-<div id="singleColumn">
+<div id="singleColumnPlus">
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "alumni" %}
 <h1> Alumni </h1>
