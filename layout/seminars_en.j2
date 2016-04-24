@@ -1,0 +1,23 @@
+{% extends "base_en.j2" %}
+{% from "macros_en.j2" import render_course with context  %}
+
+{% block main %}
+<head>
+<link rel="stylesheet" href="{{ media_url('css/cursos.css') }}">
+</head>
+
+<div id="seminar">
+  <h1> Masters/phd seminar presentations - FEN03-705 </h1>
+    {% set years = range(2016, 2014, -1) -%}
+    {% for year in years -%}
+      <h2> {{ year }} </h2>
+
+      {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.Year == year -%}
+        {{ render_course(res) }}
+      {% endfor %}
+
+    {% endfor %}
+</div>
+
+{% endblock %}
+
