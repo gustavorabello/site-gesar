@@ -64,13 +64,13 @@ table {
 { 
  float:left;
  clear:left;
- width:100px;
+ width:90px;
 }
 
 .column2
 { 
  float:left;
- width:540px;
+ width:520px;
  padding-top:20px;
  padding-left:60px;
  padding-right:5px;
@@ -81,9 +81,17 @@ table {
  font-size:10px;
  text-align:left;
  padding-top:5px;
+ width:50px;
+ float:left;
+ width:160px;
+}
+
+.column4
+{ 
+ padding-top:15px;
  float:right;
  clear:right;
- width:170px;
+ width:25px;
 }
 
 img
@@ -113,7 +121,7 @@ a:hover
 
 body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #efefef;
+    background-color:#efefef;
     padding: 0;
     margin: 0;
     text-shadow: 0px 2px 0px #efefef;
