@@ -1,0 +1,117 @@
+
+/* PESQUISA.CSS - EXTENSION OF SITE LAYOUT */
+@import url("site.css"); 
+
+#block
+{ 
+ margin-left:60px;
+ width:780px;
+ height:35px;
+}
+
+#block img
+{ 
+ display:block;
+ margin-left:auto;
+ height:25px;
+}
+
+#block h1
+{ 
+ font-size:18px;
+ color:black;
+}
+
+#block p
+{ 
+ font-size:14px;
+ text-align:justify;
+ color:black;
+}
+
+#block li
+{ 
+ font-size:14px;
+ text-align:justify;
+ text-decoration:none;
+ color:black;
+}
+
+#block a
+{ 
+ font-size:14px;
+ text-align:justify;
+ text-decoration:none;
+ color:black;
+}
+
+#block .col1
+{ 
+ float:left;
+ width:4%;
+}
+#block .col2
+{ 
+ float:left;
+ width:5%;
+}
+
+#block .col3
+{ 
+ float:right;
+ width:89%;
+ /*background:green;*/
+}
+
+#block .imgLeft
+{ 
+ display:block;
+ float:left;
+ padding-left:15px;
+ width:40%;
+ /*background:red;*/
+}
+
+#block .imgRight
+{ 
+ display:block;
+ float:right;
+ padding-right:15px;
+ width:40%;
+ /*background:green;*/
+}
+
+#seminar
+{ 
+ width:820px;
+ margin-top:30px;
+ margin-bottom:10px;
+ text-align:center; 
+ font-size:13px; 
+ letter-spacing:-1px;
+ height:auto;
+}
+
+#seminar h1 
+{ 
+ font-size:20px;
+ font-weight:bold;
+ text-align:justify;
+ margin-left:10px;
+ margin-bottom:10px;
+ color:black;
+ border-bottom: 1px solid #990000;
+ width:820px;
+}
+
+#seminar h2
+{ 
+ font-size:18px;
+ font-weight:bold;
+ text-align:justify;
+ margin-left:40px;
+ margin-bottom:10px;
+ color:black;
+ border-bottom: 1px solid #990000;
+ width:120px;
+}

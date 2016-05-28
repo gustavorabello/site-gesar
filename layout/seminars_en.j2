@@ -1,9 +1,9 @@
 {% extends "base_en.j2" %}
-{% from "macros_en.j2" import render_course with context  %}
+{% from "macros_en.j2" import render_seminar with context  %}
 
 {% block main %}
 <head>
-<link rel="stylesheet" href="{{ media_url('css/cursos.css') }}">
+<link rel="stylesheet" href="{{ media_url('css/seminars.css') }}">
 </head>
 
 <div id="seminar">
@@ -13,7 +13,7 @@
       <h2> {{ year }} </h2>
 
       {% for res in resource.node.walk_resources_sorted_by_time() if res.meta.Year == year -%}
-        {{ render_course(res) }}
+        {{ render_seminar(res) }}
       {% endfor %}
 
     {% endfor %}
