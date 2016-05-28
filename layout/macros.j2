@@ -113,11 +113,11 @@
 {% macro render_seminar(res, class=None) %}
  <div id="block">
   <div class="col1">
-   <a href={{ media_url('/pdf/courses/') }}{{ res.meta.Year}}/{{ res.meta.Month }}/{{ res.meta.Pdf }}> 
+   <a href={{ media_url('/pdf/seminars/') }}{{ res.meta.Year}}/{{ res.meta.Month }}/{{ res.meta.Pdf }}> 
    <img src={{ media_url('images/pdf-icon.png') }} ></a>
   </div>
   <div class="col2">
-   <a href={{ media_url('/pdf/courses/') }}{{ res.meta.Year}}/{{ res.meta.Month }}/{{ res.meta.Ppt }}> 
+   <a href={{ media_url('/pdf/seminars/') }}{{ res.meta.Year}}/{{ res.meta.Month }}/{{ res.meta.Ppt }}> 
    <img src={{ media_url('images/ppt-icon.png') }} ></a>
   </div>
   <div class="col3">

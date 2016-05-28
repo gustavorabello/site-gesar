@@ -1,0 +1,14 @@
+{% extends "base_en.j2" %}
+{% from "macros_en.j2" import render_course with context  %}
+
+{% block main %}
+<head>
+<link rel="stylesheet" href="{{ media_url('css/education.css') }}">
+</head>
+
+{% for res in resource.node.walk_resources_sorted_by_time() %}
+<div id="item">
+    {{ render_course(res) }}
+</div>
+{% endfor %}
+{% endblock %}

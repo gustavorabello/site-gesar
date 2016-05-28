@@ -100,13 +100,24 @@
 {% endmacro %}
 
 {% macro render_course(res, class=None) %}
+{% refer to res.relative_path as post %}
+<h1>{{ res.meta.title }}</h1>
+<div class=left>
+{{ post.course|markdown|typogrify }}
+</div>
+<div class=right>
+{{ post.courseRight|markdown|typogrify }}
+</div>
+{% endmacro %}
+
+{% macro render_seminar(res, class=None) %}
  <div id="block">
   <div class="col1">
-   <a href={{ media_url('/pdf/courses/') }}{{ res.meta.Year}}/{{ res.meta.Month }}/{{ res.meta.Pdf }}> 
+   <a href={{ media_url('/pdf/seminars/') }}{{ res.meta.Year}}/{{ res.meta.Month }}/{{ res.meta.Pdf }}> 
    <img src={{ media_url('images/pdf-icon.png') }} ></a>
   </div>
   <div class="col2">
-   <a href={{ media_url('/pdf/courses/') }}{{ res.meta.Year}}/{{ res.meta.Month }}/{{ res.meta.Ppt }}> 
+   <a href={{ media_url('/pdf/seminars/') }}{{ res.meta.Year}}/{{ res.meta.Month }}/{{ res.meta.Ppt }}> 
    <img src={{ media_url('images/ppt-icon.png') }} ></a>
   </div>
   <div class="col3">
@@ -146,6 +157,7 @@
 </nav>
 {%- endif %}
 {%- endmacro %}
+
 
 {% macro render_excerpt_lab(res, class=None) %}
 {% refer to res.relative_path as post %}
