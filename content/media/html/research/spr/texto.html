@@ -1,0 +1,282 @@
+---
+extends: post.j2
+default_block: text
+title: Pesquisa no GESAR
+description: GESAR Home page
+---
+
+# Sistemas Passivos de Resfriamento
+
+<b>PROJETO EXPERIMENTAL DE CIRCUITO DE CONVEC&Ccedil;&Atilde;O NATURAL</b>
+<br>
+<br>
+
+<b>OBJETIVO</b>
+<br>
+Estudo experimental e computacional de circuitos monof&aacute;sicos de convec&ccedil;&atilde;o natural.
+
+<br><br>
+<b>CONTEXTO</b>
+<br>
+
+Relevante n&uacute;mero de artigos publicados nos &uacute;ltimos dez anos com resultados num&eacute;ricos e experimentais em sistemas de circula&ccedil;&atilde;o natural demonstram a import&acirc;ncia do tema. No que se refere &agrave;s aplica&ccedil;&otilde;es na ind&uacute;stria nuclear, o circuito que resfria os reatores nucleares das usinas brasileiras  Angra 1, 2 e 3  pode operar por convec&ccedil;&atilde;o natural em caso de indisponibilidade das bombas de refrigera&ccedil;&atilde;o do reator, cujo comportamento din&acirc;mico deve ser bem conhecido no momento do projeto da usina para tais cen&aacute;rios. Outra aplica&ccedil;&atilde;o atual &eacute; a instala&ccedil;&atilde;o de armazenamento de combust&iacute;vel nuclear irradiado, sendo projetada pela Eletronuclear, cujo sistema de remo&ccedil;&atilde;o de calor ser&aacute; completamente passivo.
+
+<br>
+<br>
+<b>FOCOS DE PESQUISA</b>
+<br>
+<UL TYPE="SQUARE">
+<LI>par&acirc;metros de similaridade
+<LI>influ&ecirc;ncia dos par&acirc;metros do sistema  di&acirc;metro, carga t&eacute;rmica, coeficiente de transfer&ecirc;ncia do resfriador etc.  na estabilidade termo-hidr&aacute;ulica.
+<LI>efeito de massa de &aacute;gua intermediando o aquecedor do circuito &agrave; carga t&eacute;rmica prim&aacute;ria, e.g., circuito integrado a piscina, no comportamento din&acirc;mico do sistema.
+<LI>modelagem computacional: correla&ccedil;&atilde;o de atrito e formula&ccedil;&atilde;o num&eacute;rica.
+<LI>simula&ccedil;&otilde;es 3D
+<LI>an&aacute;lise de estabilidade
+</UL>
+
+<b>MOTIVA&Ccedil;&Atilde;O</b>
+<br>
+Ao mesmo tempo em que o emprego de SPRs monof&aacute;sicos cresce, notavelmente em sistemas de seguran&ccedil;a em instala&ccedil;&otilde;es nucleares, n&atilde;o existe correla&ccedil;&atilde;o de atrito bem aceita de uma forma geral para escoamentos em convec&ccedil;&atilde;o natural. De fato, correla&ccedil;&otilde;es para convec&ccedil;&atilde;o for&ccedil;ada s&atilde;o normalmente utilizadas em circuitos de convec&ccedil;&atilde;o natural.
+Adicionalmente, n&atilde;o existem resultados levando em conta a integra&ccedil;&atilde;o do circuito com piscina.
+
+<br>
+<br>
+<b>PRODUTO FINAL</b>
+<br>
+<UL TYPE="SQUARE">
+<LI>estabelecimento de crit&eacute;rio para sele&ccedil;&atilde;o de fator de atrito mais apropriado para circuitos de convec&ccedil;&atilde;o natural ou proposta de uma nova correla&ccedil;&atilde;o.
+<LI>c&oacute;digo computacional (programa de computador, livre para download) para dimensionamento de SPR e para simula&ccedil;&atilde;o de transiente.
+<LI>disponibiliza&ccedil;&atilde;o de dados experimentais de SPRs monof&aacute;sicos.
+</UL>
+
+<b>RESULTADOS PARCIAIS</b>
+<br><br>
+
+Um modelo 1D foi implementado em Matlab&reg; para simular um circuito de convec&ccedil;&atilde;o natural com aquecedor (<i>heater</i>) e resfriador (<i>cooler</i>) 
+como sendo trechos de tubula&ccedil;&atilde;o. O modelo consiste nas equa&ccedil;&otilde;es de conserva&ccedil;&atilde;o de quantidade de movimento e de energia, ambas para quantidades m&eacute;dias 
+na se&ccedil;&atilde;o transversal do tubo, sendo que a equa&ccedil;&atilde;o de quantidade de movimento &eacute; ainda integrada ao longo do circuito. S&atilde;o desprezados os seguintes processos:<br>
+
+<UL TYPE="SQUARE">
+<LI>condu&ccedil;&atilde;o de calor
+<LI>gera&ccedil;&atilde;o de calor por atrito
+<LI>transfer&ecirc;ncia de calor atrav&eacute;s do tubos (a menos do <i>heater</i> e do <i>cooler</i>)
+</UL>
+
+<br><br>
+<b>Quantidade de movimento linear</b><br>
+<style>
+    td.upper_line { border-top:solid 1px black; }
+    table.fraction { text-align: center; vertical-align: middle;
+        margin-top:0.5em; margin-bottom:0.5em; line-height: 2em; }
+</style>
+
+<table class="fraction" align="left" cellpadding="0" cellspacing="0">
+    <tr>
+        <td>
+            L  
+        </td>
+        <td rowspan="2">
+            &nbsp;
+        </td>
+        <td>
+            dw
+        </td>
+        <td rowspan="2">
+            &nbsp; = f &nbsp;
+        </td>
+	  <td>
+            L
+        </td>
+        <td rowspan="2">
+            &nbsp;
+        </td>
+        <td>
+            w<sup>2</sup>
+        </td>
+	  <td rowspan="2">
+	      &nbsp; + &nbsp; &rho;<sub>0</sub>g&beta;&int;Tdz
+        </td>
+    </tr>
+    <tr>
+	  <td class="upper_line">
+            A  
+        </td>
+        <td class="upper_line">
+            dt
+        </td>
+	  <td class="upper_line">
+            D
+        </td>
+	  <td class="upper_line">
+            2&rho;<sub>0</sub>A<sup>2</sup>
+        </td>
+    </tr>
+</table>
+<br><br>
+<p align="left">
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<b>Energia</b><br>
+<br>tubos:
+</p>
+<table class="fraction" align="left" cellpadding="0" cellspacing="0">
+    <tr>
+        <td nowrap="nowrap">
+            &part;T  
+        </td>
+        <td rowspan="2" nowrap="nowrap">
+            &nbsp; + &nbsp;
+        </td>
+        <td nowrap="nowrap">
+            w
+        </td>
+        <td rowspan="2" nowrap="nowrap">
+            &nbsp;
+        </td>
+	  <td nowrap="nowrap">
+            &part;T
+        </td>
+        <td rowspan="2" nowrap="nowrap">
+            &nbsp; = &nbsp; 0
+        </td>
+    </tr>
+    <tr>
+	  <td class="upper_line">
+            &part;t  
+        </td>
+        <td class="upper_line">
+            &rho;<sub>0</sub>A
+        </td>
+	  <td class="upper_line">
+            &part;s
+        </td>
+    </tr>
+</table>
+<br>
+<p align="left">
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><i>heater</i>:
+</p>
+<table class="fraction" align="left" cellpadding="0" cellspacing="0">
+    <tr>
+        <td nowrap="nowrap">
+            &part;T  
+        </td>
+        <td rowspan="2" nowrap="nowrap">
+            &nbsp; + &nbsp;
+        </td>
+        <td nowrap="nowrap">
+            w
+        </td>
+        <td rowspan="2" nowrap="nowrap">
+            &nbsp;
+        </td>
+	  <td nowrap="nowrap">
+            &part;T
+        </td>
+        <td rowspan="2" nowrap="nowrap">
+            &nbsp; = &nbsp;
+        </td>
+	  <td nowrap="nowrap">
+            Q
+        </td>
+    </tr>
+    <tr>
+	  <td class="upper_line">
+            &part;t  
+        </td>
+        <td class="upper_line">
+            &rho;<sub>0</sub>A
+        </td>
+	  <td class="upper_line">
+            &part;s
+        </td>
+	  <td class="upper_line">
+            L<sub><i>h</i></sub>A&rho;<sub>0</sub>c<sub>p</sub>
+        </td>
+    </tr>
+</table>
+
+<br>
+<p align="left">
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><i>cooler</i>:
+</p>
+<table class="fraction" align="left" cellpadding="0" cellspacing="0">
+    <tr>
+        <td nowrap="nowrap">
+            &part;T  
+        </td>
+        <td rowspan="2" nowrap="nowrap">
+            &nbsp; + &nbsp;
+        </td>
+        <td nowrap="nowrap">
+            w
+        </td>
+        <td rowspan="2" nowrap="nowrap">
+            &nbsp;
+        </td>
+	  <td nowrap="nowrap">
+            &part;T
+        </td>
+        <td rowspan="2" nowrap="nowrap">
+            &nbsp; = &nbsp; - 4 &nbsp;
+        </td>
+	  <td nowrap="nowrap">
+            U(T-T<sub>s</sub>)
+        </td>
+    </tr>
+    <tr>
+	  <td class="upper_line">
+            &part;t  
+        </td>
+        <td class="upper_line">
+            &rho;<sub>0</sub>A
+        </td>
+	  <td class="upper_line">
+            &part;s
+        </td>
+	  <td class="upper_line">
+            D&rho;<sub>0</sub>c<sub>p</sub>
+        </td>
+    </tr>
+</table>
+
+<br>
+<p align="left">
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br>Solu&ccedil;&atilde;o num&eacute;rica em diferen&ccedil;as finitas para o estado permanente das equa&ccedil;&otilde;es acima produz
+</p>
+
+<br><br>
+<img src={{ media_url('images/research/spr/Re_x_Gr-2.png') }} 
+height="400px" align="middle">
+<br>
+<br>
+
+Observe que os resultados s&atilde;o diferentes dependendo do fator de atrito utilizado.<br>
+
+A figura a seguir apresenta o resultado obtido para a solu&ccedil;&atilde;o transiente.<br><br>
+
+<img src={{ media_url('images/research/spr/dp_x_t_expl-2.png') }} 
+height="400px" align="middle">
+<br>
+<br>
+
+Ambos os resultados foram confrontados com dados experimentais da literatura e apresentaram boa concord&acirc;ncia sob ponto de vista qualitativo.
+
+<br>
+<br>
+<b>EXPERIMENTO</b>
+<br><br>
