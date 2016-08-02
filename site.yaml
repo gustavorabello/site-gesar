@@ -63,13 +63,13 @@ context:
                 url: seminarios
                 url_en: seminars
             -
-                name: Projetos
-                name_en: Projects
-                description: Projeto
+                name: Servi&ccedil;os
+                name_en: Services 
+                description: Servi&ccedil;o
                 css_class: pesquisa
                 type: node
-                url: projetos
-                url_en: projects
+                url: servicos
+                url_en: services
             -
                 name: Pesquisa
                 name_en: Research

@@ -1,0 +1,133 @@
+---
+extends: post.j2
+default_block: text
+title: Pesquisa no GESAR
+description: GESAR Home page
+---
+
+# Escoamento em meios porosos
+
+&nbsp;
+&nbsp;
+
+A t&eacute;cnica de sequestro de g&aacute;s carb&ocirc;nico tem grande
+import&acirc;ncia na redu&ccedil;&atilde;o de emiss&otilde;es
+antropog&ecirc;nicas. Atualmente, sabemos que 60% dessas emiss&otilde;es
+&eacute; dada atrav&eacute;s de centrais t&eacute;rmicas,
+f&aacute;bricas de cimento, refinarias, usinas sider&uacute;rgicas e
+outras instala&ccedil;&otilde;es industriais. O sequestro
+geol&oacute;gico de CO2 &eacute; uma das op&ccedil;&otilde;es para esta
+t&eacute;cnica.
+
+&nbsp;
+
+A estocagem do di&oacute;xido de carbono em forma&ccedil;&otilde;es
+geol&oacute;gicas como um aqu&iacute;fero salino tem sido amplamente
+estudada, quando o CO2 &eacute; injetado em um aqu&iacute;fero, ele se
+dissolve na &aacute;gua salgada de forma lenta, pelo processo de
+difus&atilde;o. Nesse processo surgem instabilidades gravitacionais,
+conhecidas pelo nome em ingl&ecirc;s fingers que &eacute; o efeito da
+difus&atilde;o entre o fluido mais denso no fluido menos denso. O estudo
+desse fen&ocirc;meno &eacute; importante para classificar, quantificar e
+avaliar a dissolu&ccedil;&atilde;o do di&oacute;xido de carbono na
+salmoura.
+
+&nbsp;
+
+Em muitos trabalhos j&aacute; encontramos um estudo detalhado da
+dissolu&ccedil;&atilde;o em um aqu&iacute;fero salino com a
+suposi&ccedil;&atilde;o de uma parede superior plana, em nosso trabalho
+focamos o estudo te&oacute;rico, atrav&eacute;s de
+simula&ccedil;&otilde;es computacionais, em um aqu&iacute;fero com
+superf&iacute;cie superior curva, variamos a curvatura desta
+superf&iacute;cie e encontramos resultados variados. O objetivo &eacute;
+constatar qual configura&ccedil;&atilde;o (plana ou curva) &eacute;
+melhor para que ocorra maior dissolu&ccedil;&atilde;o do CO2.
+
+&nbsp;
+
+Consideramos um problema de flutua&ccedil;&atilde;o direcionada pela
+forma&ccedil;&atilde;o de fingers em meio poroso pela
+dissolu&ccedil;&atilde;o de um fluido inicialmente mais denso sobre um
+fluido menos denso (di&oacute;xido de carbono sobre a &aacute;gua
+salgada, por exemplo). O foco &eacute; na camada superior onde a
+din&acirc;mica da dissolu&ccedil;&atilde;o convectiva acontece.
+
+As equa&ccedil;&otilde;es, na forma adimensional, que descrevem a
+din&acirc;mica do escoamento s&atilde;o dadas por:
+
+&nbsp;
+
+<img src={{ media_url('images/research/porous/equacoes.png') }}
+height="200px" align="middle">
+
+onde c &eacute; o campo de concentra&ccedil;&atilde;o. A Eq.1 &eacute; a
+equa&ccedil;&atilde;o do transporte de vorticidade com a Lei de Darcy e
+a Eq.2 &eacute; a equa&ccedil;&atilde;o do transporte de
+concentra&ccedil;&atilde;o.
+
+&nbsp;
+
+As condi&ccedil;&otilde;es de contorno para o campo de velocidade
+s&atilde;o prescritas como de n&atilde;o-escorregamento para a
+componente normal da velocidade nas paredes superior e inferior e
+condi&ccedil;&otilde;es peri&oacute;dicas nas laterais. E para o campo
+de concentra&ccedil;&atilde;o adimensional, prescrevemos fluxo nulo na
+parede inferior, peri&oacute;dicas nas laterais e constante e igual a 1
+na parede superior.
+
+As simula&ccedil;&otilde;es num&eacute;ricas s&atilde;o realizadas com
+uma pequena perturba&ccedil;&atilde;o na parede superior estimulando as
+instabilidades a ocorrerem.
+
+&nbsp;
+
+Reproduzimos o estudo de um dom&iacute;nio com superf&iacute;cie
+superior plana (ver Fig.1(a)) para verifica&ccedil;&atilde;o e
+valida&ccedil;&atilde;o do c&oacute;digo num&eacute;rico, desenvolvido
+na linguagem de programa&ccedil;&atilde;o C juntamente com a biblioteca
+PETSc. Ap&oacute;s a valida&ccedil;&atilde;o realizamos a
+deforma&ccedil;&atilde;o da superf&iacute;cie superior simulando assim
+um aqu&iacute;fero salino curvo.
+
+&nbsp;
+
+<img src={{ media_url('images/research/porous/figura1abc.jpg') }}
+    height="180px" align="middle">
+Figura 1: Evolu&ccedil;&atilde;o da din&acirc;mica de
+dissolu&ccedil;&atilde;o para o caso da superf&iacute;cie plana e curva.
+
+&nbsp;
+
+As Figs. 1(a) e 1(b) mostram a evolu&ccedil;&atilde;o no tempo das
+simula&ccedil;&otilde;es para o caso da superf&iacute;cie plana e curva,
+respectivamente. A parte direita das figuras mostram a carta
+espa&ccedil;o-tempo, atrav&eacute;s dela observamos o surgimento dos
+fingers ao longo do tempo (de cima para baixo) na camada limite, numa
+posi&ccedil;&atilde;o fixa a uma certa dist&acirc;ncia da parede
+superior.
+
+&nbsp;
+
+Uma forma de medir a velocidade da dissolu&ccedil;&atilde;o &eacute; a
+obten&ccedil;&atilde;o do comprimento de mistura, visto na Fig.2. A
+figura mostra os resultados para os casos em que variamos a
+deforma&ccedil;&atilde;o da parede superior do dom&iacute;nio.
+
+&nbsp;
+
+<img src={{ media_url('images/research/porous/fig4.png') }}
+    height="320px" align="middle">
+Figura 2: Evolu&ccedil;&atilde;o no tempo do comprimento de mistura.
+
+&nbsp;
+
+V&aacute;rias outras medidas de p&oacute;s-processamento est&atilde;o
+sendo desenvolvidas e analisadas para que esse estudo te&oacute;rico
+esteja completo. Em breve teremos uma tese de doutorado com maior
+profundidade do tema e dos resultados obtidos.
+
+&nbsp;
+
+
+
