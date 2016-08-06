@@ -1,0 +1,186 @@
+
+/* PESQUISA.CSS - EXTENSION OF SITE LAYOUT */
+@import url("site.css"); 
+
+#page
+{ 
+ width:820px;
+ margin-top:30px;
+ margin-bottom:60px;
+ text-align:center; 
+ font-size:13px; 
+ letter-spacing:-1px;
+}
+
+#page a
+{ 
+ font-family:Arial, Helvetica, sans-serif; 
+}
+
+#page a:hover
+{ 
+ color:#990000;
+ border-bottom:1px;
+}
+
+#page p 
+{ 
+ text-align:left; 
+}
+
+#page h1 
+{ 
+ font-size:24px;
+ font-weight:bold;
+ text-align:justify;
+ margin-left:30px;
+ margin-bottom:10px;
+ color:black;
+ border-bottom: 1px solid #990000;
+ width:820px;
+}
+
+#page img
+{ 
+ display:block;
+ height:25px;
+ margin-left:auto;
+ margin-right:auto;
+}
+
+#item
+{ 
+ display:block;
+ height:75px;
+ width:750px;
+ margin-left:40px;
+ text-align: justify;
+}
+
+#item p
+{
+ text-align:justify;
+ color:black;
+}
+
+#item b
+{
+ color:black;
+ font-weight:bold;
+}
+
+#item li
+{ 
+ font-size:14px;
+ padding-left:20px;
+ text-align:justify;
+ color:black;
+}
+
+#item h1
+{ 
+ font-size:18px;
+ text-align:justify;
+ padding-top:40px;
+ color:black;
+}
+
+#item .right
+{ 
+ float:right;
+ width:96%;
+}
+
+#item .left
+{ 
+ border:0;
+ float:left;
+ width:3%;
+}
+
+#item img
+{ 
+ display:block;
+ height:25px;
+ margin-left:auto;
+ margin-right:auto;
+}
+
+#block
+{ 
+ margin-left:40px;
+ width:780px;
+ height:100px;
+}
+
+#block img
+{ 
+ display:block;
+ margin-left:auto;
+ height:35px;
+ /*background:red;*/
+}
+
+#block h1
+{ 
+ font-size:18px;
+ color:black;
+}
+
+#block p
+{ 
+ font-size:14px;
+ text-align:justify;
+ color:black;
+ /*background:green;*/
+ margin-left:60px;
+}
+
+#block li
+{ 
+ font-size:14px;
+ text-align:justify;
+ text-decoration:none;
+ color:black;
+}
+
+#block a
+{ 
+ font-size:14px;
+ text-align:justify;
+ text-decoration:none;
+ color:black;
+}
+
+#block .left
+{ 
+ float:left;
+ width:5%;
+ /*background:red;*/
+}
+
+#block .right
+{ 
+ float:right;
+ width:92%;
+ /*background:green;*/
+}
+
+#block .imgLeft
+{ 
+ display:block;
+ float:left;
+ padding-left:15px;
+ width:40%;
+ /*background:red;*/
+}
+
+#block .imgRight
+{ 
+ display:block;
+ float:right;
+ padding-right:15px;
+ width:40%;
+ /*background:green;*/
+}
+

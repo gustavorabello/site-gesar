@@ -169,3 +169,17 @@
 </div>
 </div>
 {% endmacro %}
+
+{% macro render_project(res, class=None) %}
+ <div id="block">
+  <div class="left">
+   <img src={{ media_url('images/agencies/') }}{{ res.meta.Agency}}{{('.png')}} >
+  </div>
+  <div class="right">
+	<p>Title: <b> {{ res.meta.Title }}</b>,</p>
+	<p>Coordinator: {{res.meta.Coordinator}},</p> 
+	<p>Modality: {{res.meta.Modality}},</p> 
+	<p>Agency: <b>{{res.meta.Agency}}</b>.</p> 
+  </div>
+ </div>
+{% endmacro %}
