@@ -10,6 +10,9 @@ import os,shutil,glob
 import datetime,unicodedata
 
 directory =  '../content/projetos/'
+directory_en =  '../content/projects/'
+encoding = 'latin-1'
+
 count = 1
 
 for filecsv in glob.glob('*.csv'):
@@ -31,22 +34,42 @@ for filecsv in glob.glob('*.csv'):
  
    coordinator = os.path.splitext(filecsv)[0]
  
-   # Saved files 
+   # Saved files PT_BR
    save_dir = directory + begin_year
    if not os.path.exists(save_dir):
     os.mkdir(save_dir)
+
+   # Saved files EN
+   save_dir_en = directory_en + begin_year
+   if not os.path.exists(save_dir_en):
+    os.mkdir(save_dir_en)
  
-   file = open(save_dir + '/' + agency + '-' + coordinator + '-' + str(count) + ".html",'w')
-   file.write("---\n")
-   file.write("Title: " + title + "\n")
-   file.write("Coordinator: " + coordinator + "\n")
-   file.write("Agency: " + agency + "\n")
-   file.write("Year: " + begin_year + "\n")
-   file.write("Modality: " + bid + "\n")
+   file_pt = open(save_dir + '/' + agency + '-' 
+                  + coordinator + '-' + str(count) + ".html",'w')
+   file_pt.write("---\n")
+   file_pt.write("Title: " + title + "\n")
+   file_pt.write("Coordinator: " + coordinator + "\n")
+   file_pt.write("Agency: " + agency + "\n")
+   file_pt.write("Year: " + begin_year + "\n")
+   file_pt.write("Modality: " + bid + "\n")
    nd = datetime.datetime.strptime(begin_date,'%m/%d/%y').strftime('%Y-%m-%d')
-   file.write("Created: !!timestamp '" + nd + " " 
-              + "10:00:00" + "'\n")
-   file.write("---\n")
-   file.close()
+   file_pt.write("Created: !!timestamp '" + nd + " " 
+                 + "10:00:00" + "'\n")
+   file_pt.write("---\n")
+   file_pt.close()
+
+   file_en = open(save_dir_en + '/' + agency + '-' 
+                  + coordinator + '-' + str(count) + ".html",'w')
+   file_en.write("---\n")
+   file_en.write("Title: " + title + "\n")
+   file_en.write("Coordinator: " + coordinator + "\n")
+   file_en.write("Agency: " + agency + "\n")
+   file_en.write("Year: " + begin_year + "\n")
+   file_en.write("Modality: " + bid + "\n")
+   file_en.write("Created: !!timestamp '" + nd + " " 
+                 + "10:00:00" + "'\n")
+   file_en.write("---\n")
+   file_en.close()
+
    count = count + 1
  

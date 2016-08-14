@@ -79,6 +79,14 @@ context:
                 url: pesquisa
                 url_en: research
             -
+                name: Projetos
+                name_en: Projects
+                description: Projetos
+                css_class: projetos
+                type: node
+                url: projetos
+                url_en: projects
+            -
                 name: Publica&ccedil;&otilde;es 
                 name_en: Publications
                 description: Publica&ccedil;&otilde;es
