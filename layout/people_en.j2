@@ -25,7 +25,7 @@
 <div id="singleColumnPlus">
 {% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if (res.meta.level == "admin" or res.meta.level == "tec") %}
-<h1> Techincal-administrative support </h1>
+<h1> Research support </h1>
 {% break%}{% endif %}{% endfor %}
 <p>&nbsp;</p>
 {% set count = 1 %}
