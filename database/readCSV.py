@@ -13,6 +13,16 @@ directory =  '../content/projetos/'
 directory_en =  '../content/projects/'
 encoding = 'latin-1'
 
+# removing all directories PT-BR
+rm_dir = directory + "20*"
+for path in glob.glob(rm_dir):
+ shutil.rmtree(path)
+
+# removing all directories EN
+rm_dir_en = directory_en + "20*"
+for path in glob.glob(rm_dir_en):
+ shutil.rmtree(path)
+
 count = 1
 
 for filecsv in glob.glob('*.csv'):
