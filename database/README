@@ -1,0 +1,16 @@
+o --------------------------------------------------------------------- o
+| this is file README, created at 11-Sep-2016                           |
+| maintained by Gustavo Rabello dos Anjos                               |
+| e-mail: gustavo.rabello@gmail.com                                     |
+o --------------------------------------------------------------------- o
+
+Para incluir projetos, execute a sequência baixo:
+
+- abra o arquivo projetos.xlsx
+- adcione o projeto do autor descrito na aba inferior
+- salve o arquivo
+- salve o arquivo novamente com extensão CSV (Windows Comma Separated)
+- converta os acentos gráficos do arquivo CSV gerado para
+  compatibilidade com HTML
+- execute python readCSV.py para criar os arquivos para página do GESAR.
+
