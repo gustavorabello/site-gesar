@@ -11,6 +11,14 @@
 {% mark text -%}
 <head>
  <link rel="stylesheet" href="{{ media_url('css/pesquisa.css') }}">
+ <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {inlineMath: [['$$$','$$$'], ['\\(','\\)']]}
+ });
+ </script>
+ <script type="text/javascript" async
+   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
  </head>
  <div id="simple">
 {% block text -%}
