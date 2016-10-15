@@ -1,0 +1,209 @@
+---
+extends: post_en.j2
+default_block: text
+title: Pesquisa no GESAR
+description: GESAR Home page
+---
+
+<center>
+<font size=+2>Passive Cooling Systems</font>
+<br><br>
+
+<b>EXPERIMENTAL PROJECT ON NATURAL CONVECTION LOOPS</b></center>
+<br>
+
+<b>RESEARCH TEAM</b>
+<LI> <a href="http://www.gesar.uerj.br/people/grad/danilo.html">Danillo Soares</a>
+<LI> <a href="http://www.gesar.uerj.br/people/grad/cerqueira.html">Gabriel Cerqueira</a>
+<LI> <a href="http://www.gesar.uerj.br/people/grad/tinoco.html">Jo&atilde;o Pedro Bastos</a>
+<LI> <a href="http://www.gesar.uerj.br/people/len/leon.html">Leon Lima</a>
+<br><br>
+
+<b>OBJECTIVE</b>
+<br>
+Experimental and Computational study of single-phase Natural Circulation
+Loops
+
+<br><br>
+<b>CONTEXT</b>
+<br>
+
+A large number of papers published in the last ten years with numerical
+and experimental results from natural circulation loops shows the
+importance of this topic. With respect to applications in nuclear
+industry, the circuit which cools the nuclear reactors in Brazilian
+power plants -- Angra 1, 2 and 3 -- may operate by natural
+convection in case of unavailability of the reactor coolant pumps, and
+the dynamic behavior of such flow must be well understood at the design
+phase. Another application is the facility for spent fuel storage, under
+design by Eletronuclear, which will count with a fully passive heat
+removal system.
+
+<br>
+<br>
+<b>RESEARCH FOCUS</b>
+<br>
+<UL TYPE="SQUARE">
+<LI>similarity parameters
+<LI>influence of system's parameters -- diameter, heat load, cooler heat
+transfer coefficient etc. -- on thermo-hydraulic stability.
+<LI> effect of water mass intermediating the loop's heater and the
+primary heat load, e.g., integration between circuit and pool, on the
+system's dynamic behavior
+<LI>computational modeling: friction correlation and numerical formulation.
+<LI>3D simulation
+<LI>stability analysis
+</UL>
+
+<b>MOTIVATION</b>
+<br>
+At the same time that applications of single-phase Passive Cooling
+Systems grow, notably in safety systems in nuclear installations, there
+isn't so far a well accepted friction correlation for natural
+convection flows. In deed, correlations for forced convection are
+normally used in natural convection circuits.
+Additionally, there isn't available results taking integration between
+loop and pool into account.
+
+<br>
+<br>
+<b>FINAL PRODUCT</b>
+<br>
+<UL TYPE="SQUARE">
+<LI>establishment of a criterion for selection of most appropriate friction factor for natural circulation loops or a proposition of a new correlation.
+<LI>computational code (computer program, free for download) for sizing and transient simulation of Passive Cooling Systems.
+<LI>to provide experimental data for single-phase Passive Cooling Systems.
+</UL>
+
+<b>PARTIAL RESULTS</b>
+<br><br>
+A 1D model has been implemented in Matlab&reg; to simulate a
+natural circulation loop with heater and cooler as piping sections. The
+model consists of conservation equations for momentum and energy, both
+for mean quantities in the tube cross section. Momentum equation is also
+integrated along the loop's length. The following processes are
+neglected in the model:<br>
+
+<UL TYPE="SQUARE">
+<LI>heat conduction
+<LI>heat generation by friction
+<LI>heat transfer across pipe walls (except in heater and cooler).
+</UL>
+
+The governing equations are:
+
+<br><br>
+<b>Momentum</b><br>
+
+<script type="text/x-mathjax-config" align="left">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$$$','$$$'], ['\\(','\\)']]}
+});
+</script>
+<script align="left" type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML" align="left">
+</script>
+
+
+$$\frac{L}{A}\frac{dw}{dt} = -\left(f\frac{L}{D}+K\right)\frac{w^2}{2\rho_0A^2} + \rho_0g\beta\oint Tdz$$
+
+<br><br>
+
+<p align="left">
+<br><br>
+<b>Energy</b><br>
+<br>pipes:
+</p>
+
+
+$$\frac{\partial T}{\partial t}+\frac{w}{\rho_0A}\frac{\partial T}{\partial s} = 0$$
+
+<br>
+<p align="left">
+<br><br>
+<br>heater:
+</p>
+
+$$\frac{\partial T}{\partial t}+\frac{w}{\rho_0A}\frac{\partial T}{\partial s} = \frac{Q_{NCL}}{L_hA\rho_0c_p}$$
+
+
+<br>
+<p align="left">
+<br><br>
+<br>cooler:
+</p>
+
+
+$$\frac{\partial T}{\partial t}+\frac{w}{\rho_0A}\frac{\partial T}{\partial s} = -\frac{4U_c(T-T_s)}{D\rho_0c_p}$$
+
+<br>
+<p align="left">
+<br><br>
+<br>Numerical solution in finite differences for the steady state produces
+</p>
+
+<img src={{ media_url('images/research/spr/valid_ss_NCL.svg') }}
+width="500px" align="middle">
+<br>
+<b>Fig. 1</b> Steady state regime for rectangular Natural Convection
+Loops -- experimental and numerical results. The plot presents results
+for the four possible configurations in terms of heater and cooler
+orientation.
+<br><br>
+
+Note that results are different depending on the friction fator correlation.<br>
+
+The following figure presents the obtained result for the transient solution.<br><br>
+
+<img src={{ media_url('images/research/spr/dp_x_t_expl.svg') }} 
+width="500px" align="middle">
+<br>
+<b>Fig. 2</b> Transient result for a HHHC loop: one experimental series
+(red) and two numerical series, for different friction correlations.
+<br><br>
+
+Both results were compared to experimental data from literature and
+presented good qualitative agreement.
+
+<br>
+<br>
+<b>EXPERIMENT</b>
+<br><br>
+
+The experimental setup consists on a rectangular loop, 1 m tall and 0.8
+m wide, with horizontal heater and cooler. The thermal load is supplied
+to the system by means of three electrical resistances 667 W each,
+building up a total power capacity of 2000 W. The cooler is a tube in
+tube heat exchanger, where the work fluid of the loop flows through the
+inner tube and a cooling fluid flows (forced) through the outer tube
+(<i>annulus</i>). The system is equipped with 4 digital temperature
+sensors, positioned at the inlet and outlet of heater and cooler.
+Insturmentation is performed via a Arduino MEGA 2560 board. The
+following figure shows the dimensional drawing and a picture of the
+loop.
+
+<img src={{ media_url('images/research/spr/NCL_UERJ.pdf') }} 
+width="600px" align="left">
+<br>
+<b>Fig. 3</b> Dimensional drawing of the experimental facility of UERJ.
+<br><br>
+
+<img src={{ media_url('images/research/spr/loop.png') }} 
+height="700px" align="middle">
+<br><br>
+<b>Fig. 4</b> The experimental facility of UERJ.
+<br><br>
+
+<b>BREAK FOR LUNCH</b>
+<br><br>
+<img src={{ media_url('images/research/spr/macarronada.jpg') }} 
+height="100px" align="middle">
+<br><br>
+
+The construction of the loop had a little delay because one of our team
+members got a bit late to work one day...<br> The team member was <a
+href="http://www.gesar.uerj.br/people/grad/tinoco.html">Jo&atilde;o
+Pedro</a> and the cause: his grandmother's <i>macarronada</i> recipe.
+That's right. The recipe is so good that our friend overfed himself,
+resulting in digestive disturbs...<br> Well, for those who are moderate,
+we will post the recipe here soon!!

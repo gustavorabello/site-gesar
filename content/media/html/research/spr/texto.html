@@ -5,16 +5,24 @@ title: Pesquisa no GESAR
 description: GESAR Home page
 ---
 
-# Sistemas Passivos de Resfriamento
+<center>
+<font size=+2>Sistemas Passivos de Resfriamento</font>
+<br><br>
+
+<b>PROJETO EXPERIMENTAL DE CIRCUITO DE CONVEC&Ccedil;&Atilde;O NATURAL</b></center>
 <br>
 
-## PROJETO EXPERIMENTAL DE CIRCUITO DE CONVEC&Ccedil;&Atilde;O NATURAL
-<br>
-<br>
+<b>EQUIPE</b>
+<LI> <a href="http://www.gesar.uerj.br/pessoas/grad/danilo.html">Danillo Soares</a>
+<LI> <a href="http://www.gesar.uerj.br/pessoas/grad/cerqueira.html">Gabriel Cerqueira</a>
+<LI> <a href="http://www.gesar.uerj.br/pessoas/grad/tinoco.html">Jo&atilde;o Pedro Bastos</a>
+<LI> <a href="http://www.gesar.uerj.br/pessoas/len/leon.html">Leon Lima</a>
+<br><br>
 
 <b>OBJETIVO</b>
 <br>
-Estudo experimental e computacional de circuitos monof&aacute;sicos de convec&ccedil;&atilde;o natural.
+Estudo experimental e computacional de circuitos monof&aacute;sicos de
+convec&ccedil;&atilde;o natural.
 
 <br><br>
 <b>CONTEXTO</b>
@@ -43,25 +51,27 @@ remo&ccedil;&atilde;o de calor ser&aacute; completamente passivo.
 <LI>influ&ecirc;ncia dos par&acirc;metros do sistema -- di&acirc;metro,
 carga t&eacute;rmica, coeficiente de transfer&ecirc;ncia do resfriador
 etc. -- na estabilidade termo-hidr&aacute;ulica.
-<LI>efeito de massa de &aacute;gua intermediando o aquecedor do circuito &agrave; carga t&eacute;rmica prim&aacute;ria, e.g., circuito integrado a piscina, no comportamento din&acirc;mico do sistema.
-<LI>modelagem computacional: correla&ccedil;&atilde;o de atrito e formula&ccedil;&atilde;o num&eacute;rica.
+<LI>efeito de massa de &aacute;gua intermediando o aquecedor do circuito
+&agrave; carga t&eacute;rmica prim&aacute;ria, e.g., circuito integrado
+a piscina, no comportamento din&acirc;mico do sistema.
+<LI>modelagem computacional: correla&ccedil;&atilde;o de atrito e
+formula&ccedil;&atilde;o num&eacute;rica.
 <LI>simula&ccedil;&otilde;es 3D
 <LI>an&aacute;lise de estabilidade
 </UL>
 
-<br>
-<br>
 <b>MOTIVA&Ccedil;&Atilde;O</b>
 <br>
-Ao mesmo tempo em que o emprego de SPRs monof&aacute;sicos cresce,
+Ao mesmo tempo em que o emprego de SPR's monof&aacute;sicos cresce,
 notavelmente em sistemas de seguran&ccedil;a em
 instala&ccedil;&otilde;es nucleares, n&atilde;o existe
 correla&ccedil;&atilde;o de atrito bem aceita de uma forma geral para
 escoamentos em convec&ccedil;&atilde;o natural. De fato,
 correla&ccedil;&otilde;es para convec&ccedil;&atilde;o for&ccedil;ada
 s&atilde;o normalmente utilizadas em circuitos de
-convec&ccedil;&atilde;o natural.
-Adicionalmente, n&atilde;o existem resultados levando em conta a integra&ccedil;&atilde;o do circuito com piscina.
+convec&ccedil;&atilde;o natural. Adicionalmente, n&atilde;o existem
+resultados levando em conta a integra&ccedil;&atilde;o do circuito com
+piscina.
 
 <br>
 <br>
@@ -75,235 +85,150 @@ correla&ccedil;&atilde;o.
 <LI>c&oacute;digo computacional (programa de computador, livre para
 download) para dimensionamento de SPR e para simula&ccedil;&atilde;o de
 transiente.
-<LI>disponibiliza&ccedil;&atilde;o de dados experimentais de SPRs
+<LI>disponibiliza&ccedil;&atilde;o de dados experimentais de SPR's
 monof&aacute;sicos.
 </UL>
-<br>
 
 <b>RESULTADOS PARCIAIS</b>
-<br>
-Um modelo 1D foi implementado em Matlab&reg; para simular um circuito de convec&ccedil;&atilde;o natural com aquecedor (<i>heater</i>) e resfriador (<i>cooler</i>) 
-como sendo trechos de tubula&ccedil;&atilde;o. O modelo consiste nas equa&ccedil;&otilde;es de conserva&ccedil;&atilde;o de quantidade de movimento e de energia, ambas para quantidades m&eacute;dias 
-na se&ccedil;&atilde;o transversal do tubo, sendo que a equa&ccedil;&atilde;o de quantidade de movimento &eacute; ainda integrada ao longo do circuito. S&atilde;o desprezados os seguintes processos:<br>
+<br><br>
+
+Um modelo 1D foi implementado em Matlab&reg; para simular um circuito de
+convec&ccedil;&atilde;o natural com aquecedor (<i>heater</i>) e
+resfriador (<i>cooler</i>) como sendo trechos de
+tubula&ccedil;&atilde;o. O modelo consiste nas equa&ccedil;&otilde;es de
+conserva&ccedil;&atilde;o de quantidade de movimento e de energia, ambas
+para quantidades m&eacute;dias na se&ccedil;&atilde;o transversal do
+tubo, sendo que a equa&ccedil;&atilde;o de quantidade de movimento
+&eacute; ainda integrada ao longo do circuito. S&atilde;o desprezados os
+seguintes processos:<br>
 
 <UL TYPE="SQUARE">
 <LI>condu&ccedil;&atilde;o de calor
 <LI>gera&ccedil;&atilde;o de calor por atrito
-<LI>transfer&ecirc;ncia de calor atrav&eacute;s do tubos (a menos do <i>heater</i> e do <i>cooler</i>)
+<LI>transfer&ecirc;ncia de calor atrav&eacute;s do tubos (a menos do
+<i>heater</i> e do <i>cooler</i>)
 </UL>
+
+As equa&ccedil;&otilde;es que comp&otilde;em o modelo s&atilde;o apresentadas a seguir.
 
 <br><br>
 <b>Quantidade de movimento linear</b><br>
-<style>
-    td.upper_line { border-top:solid 1px black; }
-    table.fraction { text-align: center; vertical-align: middle;
-        margin-top:0.5em; margin-bottom:0.5em; line-height: 2em; 
-	    font-size: 15px;}
-</style>
 
-<table class="fraction" align="left" cellpadding="0" cellspacing="0">
-    <tr>
-        <td>
-            L  
-        </td>
-        <td rowspan="2">
-            &nbsp;
-        </td>
-        <td>
-            dw
-        </td>
-        <td rowspan="2">
-            &nbsp; = f &nbsp;
-        </td>
-	  <td>
-            L
-        </td>
-        <td rowspan="2">
-            &nbsp;
-        </td>
-        <td>
-            w<sup>2</sup>
-        </td>
-	  <td rowspan="2">
-	      &nbsp; + &nbsp; &rho;<sub>0</sub>g&beta;&int;Tdz
-        </td>
-    </tr>
-    <tr>
-	  <td class="upper_line">
-            A  
-        </td>
-        <td class="upper_line">
-            dt
-        </td>
-	  <td class="upper_line">
-            D
-        </td>
-	  <td class="upper_line">
-            2&rho;<sub>0</sub>A<sup>2</sup>
-        </td>
-    </tr>
-</table>
+$$\frac{L}{A}\frac{dw}{dt} = -\left(f\frac{L}{D}+K\right)\frac{w^2}{2\rho_0A^2} + \rho_0g\beta\oint Tdz$$
+
 <br><br>
+
 <p align="left">
 <br><br>
-<br><br>
 <b>Energia</b><br>
-<br>tubos:
+<br><i>tubos:</i>
 </p>
-<table class="fraction" align="left" cellpadding="0" cellspacing="0">
-    <tr>
-        <td nowrap="nowrap">
-            &part;T  
-        </td>
-        <td rowspan="2" nowrap="nowrap">
-            &nbsp; + &nbsp;
-        </td>
-        <td nowrap="nowrap">
-            w
-        </td>
-        <td rowspan="2" nowrap="nowrap">
-            &nbsp;
-        </td>
-	  <td nowrap="nowrap">
-            &part;T
-        </td>
-        <td rowspan="2" nowrap="nowrap">
-            &nbsp; = &nbsp; 0
-        </td>
-    </tr>
-    <tr>
-	  <td class="upper_line">
-            &part;t  
-        </td>
-        <td class="upper_line">
-            &rho;<sub>0</sub>A
-        </td>
-	  <td class="upper_line">
-            &part;s
-        </td>
-    </tr>
-</table>
+
+
+
+$$\frac{\partial T}{\partial t}+\frac{w}{\rho_0A}\frac{\partial T}{\partial s} = 0$$
+
+
 <br>
 <p align="left">
 <br><br>
 <br><i>heater</i>:
 </p>
-<table class="fraction" align="left" cellpadding="0" cellspacing="0">
-    <tr>
-        <td nowrap="nowrap">
-            &part;T  
-        </td>
-        <td rowspan="2" nowrap="nowrap">
-            &nbsp; + &nbsp;
-        </td>
-        <td nowrap="nowrap">
-            w
-        </td>
-        <td rowspan="2" nowrap="nowrap">
-            &nbsp;
-        </td>
-	  <td nowrap="nowrap">
-            &part;T
-        </td>
-        <td rowspan="2" nowrap="nowrap">
-            &nbsp; = &nbsp;
-        </td>
-	  <td nowrap="nowrap">
-            Q
-        </td>
-    </tr>
-    <tr>
-	  <td class="upper_line">
-            &part;t  
-        </td>
-        <td class="upper_line">
-            &rho;<sub>0</sub>A
-        </td>
-	  <td class="upper_line">
-            &part;s
-        </td>
-	  <td class="upper_line">
-            L<sub><i>h</i></sub>A&rho;<sub>0</sub>c<sub>p</sub>
-        </td>
-    </tr>
-</table>
+
+$$\frac{\partial T}{\partial t}+\frac{w}{\rho_0A}\frac{\partial T}{\partial s} = \frac{Q_{NCL}}{L_hA\rho_0c_p}$$
 
 <br>
-<br><br>
 <p align="left">
 <br><br>
 <br><i>cooler</i>:
 </p>
-<table class="fraction" align="left" cellpadding="0" cellspacing="0">
-    <tr>
-        <td nowrap="nowrap">
-            &part;T  
-        </td>
-        <td rowspan="2" nowrap="nowrap">
-            &nbsp; + &nbsp;
-        </td>
-        <td nowrap="nowrap">
-            w
-        </td>
-        <td rowspan="2" nowrap="nowrap">
-            &nbsp;
-        </td>
-	  <td nowrap="nowrap">
-            &part;T
-        </td>
-        <td rowspan="2" nowrap="nowrap">
-            &nbsp; = &nbsp; - 4 &nbsp;
-        </td>
-	  <td nowrap="nowrap">
-            U(T-T<sub>s</sub>)
-        </td>
-    </tr>
-    <tr>
-	  <td class="upper_line">
-            &part;t  
-        </td>
-        <td class="upper_line">
-            &rho;<sub>0</sub>A
-        </td>
-	  <td class="upper_line">
-            &part;s
-        </td>
-	  <td class="upper_line">
-            D&rho;<sub>0</sub>c<sub>p</sub>
-        </td>
-    </tr>
-</table>
+
+
+$$\frac{\partial T}{\partial t}+\frac{w}{\rho_0A}\frac{\partial T}{\partial s} = -\frac{4U_c(T-T_s)}{D\rho_0c_p}$$
+
+
 
 <br>
 <p align="left">
 <br><br>
-<br><br>
-<br>Solu&ccedil;&atilde;o num&eacute;rica em diferen&ccedil;as finitas para o estado permanente das equa&ccedil;&otilde;es acima produz
+<br>
+Solu&ccedil;&atilde;o num&eacute;rica em diferen&ccedil;as finitas
+para o estado permanente das equa&ccedil;&otilde;es acima produz
 </p>
 
+<img src={{ media_url('images/research/spr/valid_ss_NCL.svg') }}
+width="500px" align="middle">
+
+<br>
+<b>Fig. 1</b> Regime permanente para circuitos de
+convec&ccedil;&atilde;o natural retangulares -- resultados experimentais
+e num&eacute;ricos. O plot apresenta resultados para as quatro
+configura&ccedil;&otilde;es poss&iacute;veis em fun&ccedil;&atilde;o da
+orienta&ccedil;&atilde;o de heater e cooler.
 <br><br>
-<img src={{ media_url('images/research/spr/Re_x_Gr-2.png') }} 
-height="400px" align="middle">
-<br>
-<br>
 
-Observe que os resultados s&atilde;o diferentes dependendo do fator de atrito utilizado.<br>
+<LI> HHHC - horizontal heater horizontal cooler
+<LI> HHVC - horizontal heater vertical cooler
+<LI> VHHC - vertical heater horizontal cooler
+<LI> VHVC - vertical heater vertical cooler
+<br><br>
 
-A figura a seguir apresenta o resultado obtido para a solu&ccedil;&atilde;o transiente.<br><br>
+A figura a seguir apresenta o resultado obtido para a
+solu&ccedil;&atilde;o transiente.<br><br>
 
-<img src={{ media_url('images/research/spr/dp_x_t_expl-2.png') }} 
-height="400px" align="middle">
+<img src={{ media_url('images/research/spr/dp_x_t_expl.svg') }} 
+width="500px" align="middle">
+
 <br>
-<br>
+<b>Fig. 2</b> Transiente de loop HHHC: uma s&eacute;ria experimental
+(vermelho) e duas num&eacute;ricas, para correla&ccedil;&otilde;es de
+atrito distintas.
+<br><br>
 
-Ambos os resultados foram confrontados com dados experimentais da literatura e apresentaram boa concord&acirc;ncia sob ponto de vista qualitativo.
+Ambos os resultados foram confrontados com dados experimentais da
+literatura e apresentaram boa concord&acirc;ncia sob ponto de vista
+qualitativo.
 
 <br>
 <br>
 <b>EXPERIMENTO</b>
 <br><br>
 
-<p>Usando MathJax<p>
-$$\sum x^2 + \int_0^1 \psi \, dx$$
+O aparato experimental consiste de um loop retangular, com 1 m de altura
+por 0,8 m de largura, com heater e cooler horizontais. A carga
+t&eacute;rmica &eacute; fornecida ao sistema por meio de tr&ecirc;s
+resist&ecirc;ncias el&eacute;tricas de 667 W cada, perfazendo uma
+capacidade total de 2000 W de pot&ecirc;ncia. O cooler &eacute; um
+trocador de calor tubo em tubo, onde o fluido do loop escoa pelo tubo
+interno e um fluido de arrefecimento flui escoa (for&ccedil;ado) pelo
+tubo externo (<i>annulus</i>). O sistema &eacute; equipado com 4
+sensores digitais de temperatura, posicionados &agrave; entrada e
+sa&iacute;da de heater e cooler. A instrumenta&ccedil;&atilde;o &eacute;
+feita por uma placa Arduino MEGA 2560. As figuras a seguir mostram o
+desenho dimensional e uma foto do loop.
 
-<p>Com MathJax tamb&eacute;m &eacute; poss&iacute;vel colocar equa&ccedil;&otilde;es no texto: $$$x=0$$$<p>
+<img src={{ media_url('images/research/spr/NCL_UERJ.pdf') }} 
+width="600px" align="left">
+<br>
+<b>Fig. 3</b> Desenho dimensional do aparato experimental da UERJ.
+<br><br>
+
+<img src={{ media_url('images/research/spr/loop.png') }} 
+height="700px" align="middle">
+<br><br>
+<b>Fig. 4</b> Foto do aparato experimental da UERJ.
+<br><br>
+
+<b>INTERVALO PARA O ALMO&Ccedil;O</b>
+<br><br>
+<img src={{ media_url('images/research/spr/macarronada.jpg') }} 
+height="100px" align="middle">
+<br><br>
+A montagem do loop sofreu um pequeno atraso, porque um integrante da
+equipe acabou se atrasando um dia...<br> O integrante foi o <a
+href="http://www.gesar.uerj.br/pessoas/grad/tinoco.html">Jo&atilde;o
+Pedro</a> e a causa: receita de macarronada de sua av&oacute;. Isso
+mesmo. Acontece que a receita &eacute; t&atilde;o boa, que nosso amigo
+se sobrealimentou, resultando em dist&uacute;rbios digestivos...<br>
+Bom, para quem aprecia com modera&ccedil;&atilde;o, em breve
+disponibilizaremos a receita aqui!!
