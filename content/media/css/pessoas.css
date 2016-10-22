@@ -237,7 +237,7 @@
  text-align:center; 
  font-size:13px; 
  letter-spacing:-1px;
- height:140px;
+ height:120px;
 }
 
 #singleColumnPlus a
@@ -307,6 +307,93 @@
 }
 
 #singleColumnPlus .col3
+{ 
+ float:right;
+ width:32%;
+ height:auto;
+}
+
+
+
+
+#singleColumnAlumni
+{ 
+ width:800px;
+ margin-top:20px; 
+ margin-left:30px;
+ text-align:center; 
+ font-size:13px; 
+ letter-spacing:-1px;
+ height:170px;
+}
+
+#singleColumnAlumni a
+{ 
+ font-family:Arial, Helvetica, sans-serif; 
+}
+
+#singleColumnAlumni a:hover
+{ 
+ color:#990000;
+}
+
+#singleColumnAlumni p 
+{ 
+ text-align:center; 
+}
+
+#singleColumnAlumni li
+{
+ font-size:14px;
+ font-family:Arial, Helvetica, sans-serif; 
+ text-decoration:none;
+ color:black;
+ letter-spacing:-1px;
+ padding-left:15px;
+ padding-bottom:8px;
+ text-align:justify;
+}
+
+#singleColumnAlumni h1
+{ 
+ font-size:18px;
+ font-weight:bold;
+ text-align:left;
+ color:black;
+ border-bottom: 1px solid #990000;
+ width:820px;
+}
+
+#singleColumnAlumni h2
+{ 
+ font-size:18px;
+ text-align:justify;
+ color:black;
+}
+
+#singleColumnAlumni img
+{ 
+ height:30px;
+ text-align:center;
+ color:black;
+}
+
+#singleColumnAlumni .col1
+{ 
+ float:left;
+ width:32%;
+ height:auto;
+}
+
+#singleColumnAlumni .col2
+{ 
+ float:left;
+ margin-left:15px;
+ width:32%;
+ height:auto;
+}
+
+#singleColumnAlumni .col3
 { 
  float:right;
  width:32%;
