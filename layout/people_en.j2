@@ -58,40 +58,6 @@
 
 <div id="singleColumnPlus">
 {% for res in resource.node.walk_resources_sorted_by_time() %}
-{%- if res.meta.level == "phd" %}
-<h1> Doctoral students </h1>
-{% break%}{% endif %}{% endfor %}
-<p>&nbsp;</p>
-{% set count = 1 %}
-{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "phd" -%}
-  <div class=col{{count}}>
-    {{ render_person(res) }}
-  </div>
-  {% set count = count + 1 %}
-  {% if count > 3 -%} {% set count = 1 -%}{% endif %}
-{% endfor %}
-</div>
-
-
-<div id="singleColumnPlus">
-{% for res in resource.node.walk_resources_sorted_by_time() %}
-{%- if res.meta.level == "msc" %}
-<h1> Masters students </h1>
-{% break%}{% endif %}{% endfor %}
-<p>&nbsp;</p>
-{% set count = 1 %}
-{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "msc" -%}
-  <div class=col{{count}}>
-    {{ render_person(res) }}
-  </div>
-  {% set count = count + 1 %}
-  {% if count > 3 -%} {% set count = 1 -%}{% endif %}
-{% endfor %}
-</div>
-
-
-<div id="singleColumnPlus">
-{% for res in resource.node.walk_resources_sorted_by_time() %}
 {%- if res.meta.level == "grad" %}
 <h1> Undergraduate research </h1>
 {% break%}{% endif %}{% endfor %}
@@ -140,3 +106,36 @@
 
 {% endblock %}
 
+
+<div id="singleColumnPlus">
+{% for res in resource.node.walk_resources_sorted_by_time() %}
+{%- if res.meta.level == "phd" %}
+<h1> Doctoral students </h1>
+{% break%}{% endif %}{% endfor %}
+<p>&nbsp;</p>
+{% set count = 1 %}
+{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "phd" -%}
+  <div class=col{{count}}>
+    {{ render_person(res) }}
+  </div>
+  {% set count = count + 1 %}
+  {% if count > 3 -%} {% set count = 1 -%}{% endif %}
+{% endfor %}
+</div>
+
+
+<div id="singleColumnPlus">
+{% for res in resource.node.walk_resources_sorted_by_time() %}
+{%- if res.meta.level == "msc" %}
+<h1> Masters students </h1>
+{% break%}{% endif %}{% endfor %}
+<p>&nbsp;</p>
+{% set count = 1 %}
+{% for res in resource.node.walk_resources_sorted_by_time() if res.meta.level == "msc" -%}
+  <div class=col{{count}}>
+    {{ render_person(res) }}
+  </div>
+  {% set count = count + 1 %}
+  {% if count > 3 -%} {% set count = 1 -%}{% endif %}
+{% endfor %}
+</div>
